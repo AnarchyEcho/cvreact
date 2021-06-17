@@ -1,5 +1,7 @@
 import React from "react"
+// eslint-disable-next-line
 import ReactDOM from "react-dom"
+// eslint-disable-next-line
 import Style from "./style.css"
 
 import Portrait from "./Portrait"
@@ -12,7 +14,7 @@ function App() {
       <div id="title">
         <h1>Andrè's CV Website</h1> <hr />
       </div>
-      
+
       <div id="portrait">
         <Portrait />
       </div>

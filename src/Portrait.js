@@ -1,7 +1,9 @@
 import React from "react"
+// eslint-disable-next-line
 import ReactDOM from "react-dom"
-import portrait from "./media/react-logo/logo512.png"
+// eslint-disable-next-line
 import Style from "./style.css"
+import portrait from "./media/react-logo/logo512.png"
 
 function Portrait() {
   return (
