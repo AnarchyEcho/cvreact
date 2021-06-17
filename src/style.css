@@ -6,6 +6,8 @@
     font-family: arial;
 }
 
+/* general elements */
+
 body {
     display: flex;
     justify-content: center;
@@ -15,15 +17,24 @@ h1 {
     text-align: center;
 }
 
+/* Portrait element */
+
 #portrait {
     filter: grayscale(1);
     transform: scale(80%);
     text-align: center;
 }
 
+/* Links element */
+
 #links img{
     cursor: pointer;
     max-width: 10%;
+}
+
+#links p {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 #links a{
@@ -33,3 +44,6 @@ h1 {
     padding: 5px;
     
 }
+
+/* X element */
+

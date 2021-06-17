@@ -7,6 +7,7 @@ function Links() {
   return (
     <>
       <img src={Github} onClick={openGitPopUp} alt="Github link logo"></img>
+      <p onClick={openGitPopUp}>Github</p>
     </>
   );
 }

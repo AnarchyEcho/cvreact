@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import portrait from "./media/logo512.png"
+import portrait from "./media/react-logo/logo512.png"
 import Style from "./style.css"
 
 function Portrait() {

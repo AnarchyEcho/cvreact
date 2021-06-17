@@ -4,6 +4,7 @@ import Style from "./style.css"
 
 import Portrait from "./Portrait"
 import Links from "./Links"
+import About from "./About"
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Portrait />
       </div>
 
+      <About />
+      <hr />
       <div id="links">
         <Links />
       </div>
