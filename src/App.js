@@ -10,7 +10,7 @@ import About from "./About"
 
 function App() {
   return (
-    <>
+    <div>
       <div id="title">
         <h1>Andrè's CV Website</h1> <hr />
       </div>
@@ -26,7 +26,7 @@ function App() {
       <div id="links">
         <Links />
       </div>
-    </>
+    </div>
   );
 }
 
