@@ -3,6 +3,7 @@
     color: white;
     max-width: 100%;
     max-height: 100%;
+    font-family: arial;
 }
 
 body {
@@ -18,4 +19,9 @@ h1 {
     filter: grayscale(1);
     transform: scale(80%);
     text-align: center;
+}
+
+#links a{
+    text-decoration: none;
+    color: lightblue;
 }
