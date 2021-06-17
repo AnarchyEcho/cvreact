@@ -5,7 +5,8 @@ import Style from "./style.css"
 function About() {
   return (
     <>
-      <p>about section</p>
+      <h2>about section</h2>
+      <p>Theres a P here</p>
     </>
   );
 }

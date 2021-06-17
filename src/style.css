@@ -15,6 +15,13 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 48px;
+}
+
+/* Title element */
+
+#title {
+    margin: 0;
 }
 
 /* Portrait element */
@@ -26,6 +33,10 @@ h1 {
 }
 
 /* Links element */
+
+#links {
+    margin-top: 15px;
+}
 
 #links img{
     cursor: pointer;

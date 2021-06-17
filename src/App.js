@@ -9,14 +9,18 @@ import About from "./About"
 function App() {
   return (
     <>
-      <h1>Andrè's CV Website</h1> <hr />
+      <div id="title">
+        <h1>Andrè's CV Website</h1> <hr />
+      </div>
       
       <div id="portrait">
         <Portrait />
       </div>
 
-      <About />
-      <hr />
+      <div id="about">
+        <About /> <hr />
+      </div>
+
       <div id="links">
         <Links />
       </div>
