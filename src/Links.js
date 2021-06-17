@@ -14,8 +14,15 @@ function Links() {
   );
 }
 
+const mq = window.matchMedia( "(min-width: 960px)" );
+
 function openGitPopUp() {
-    window.open("https://github.com/KodeAndre","popPage", "resizable,scrollbars,status");
+    if (mq.matches) {
+        window.open("https://github.com/KodeAndre","popPage", "resizable,scrollbars,status");
+    }
+    else {
+        window.open("https://github.com/KodeAndre");
+ }
 }
 
 export default Links
