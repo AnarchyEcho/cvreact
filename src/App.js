@@ -13,16 +13,17 @@ import ScrollTopBtn from "./buttons/ScrollTopBtn"
 function App() {
   return (
     <div>
+
+      <div>
+        <DarkBtn />
+      </div>
+
       <div id="title">
         <h1>Andrè's CV Website</h1> <hr />
       </div>
 
       <div id="portrait">
         <Portrait />
-      </div>
-
-      <div>
-        <DarkBtn />
       </div>
 
       <div id="scrollBtn">
@@ -32,10 +33,15 @@ function App() {
       <div id="about">
         <About /> <hr />
       </div>
+      
+      <div id="footer">
 
-      <div id="links">
-        <Links />
+        <div id="links">
+          <Links />
+        </div>
+
       </div>
+
     </div>
   );
 }
