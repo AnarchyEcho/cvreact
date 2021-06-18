@@ -33,11 +33,7 @@ function App() {
         <div id="scrollBtn">
           <ScrollTopBtn />
         </div>
-        
-        <div id="about">
-          <About /> 
-        </div>
-        
+
         <hr />
 
         <div id="links">
