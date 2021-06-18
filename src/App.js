@@ -4,9 +4,11 @@ import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import Style from "./style.css"
 
-import Portrait from "./Portrait"
-import Links from "./Links"
-import About from "./About"
+import Portrait from "./elements/Portrait"
+import Links from "./elements/Links"
+import About from "./elements/About"
+import DarkBtn from "./buttons/BtnDark"
+import ScrollTopBtn from "./buttons/ScrollTopBtn"
 
 function App() {
   return (
@@ -19,6 +21,14 @@ function App() {
         <Portrait />
       </div>
 
+      <div>
+        <DarkBtn />
+      </div>
+
+      <div id="scrollBtn">
+        <ScrollTopBtn />
+      </div>
+      
       <div id="about">
         <About /> <hr />
       </div>

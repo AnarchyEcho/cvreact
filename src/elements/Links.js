@@ -2,8 +2,8 @@ import React from "react"
 // eslint-disable-next-line
 import ReactDOM from "react-dom"
 // eslint-disable-next-line
-import Style from "./style.css"
-import Github from "./media/github/GitHub-Mark-Light-120px-plus.png"
+import Style from "../style.css"
+import Github from "../media/github/GitHub-Mark-Light-120px-plus.png"
 
 function Links() {
   return (
