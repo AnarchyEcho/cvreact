@@ -7,12 +7,20 @@
 /* General elements */
 
 body {
-    display: flex;
-    justify-content: center;
-    flex: 1;
     height: 100vh;
     background-color: #121212;
     color: #FAFAFA;
+}
+
+.appBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+}
+
+hr {
+    width: 50%;
 }
 
 h1 {
@@ -35,15 +43,20 @@ h1 {
     object-fit: contain;
 }
 
+/* About element */
+
+
+
 /* Links element */
 
 #links {
     margin-top: 1em;
+    text-align: center;
 }
 
 #links img{
     cursor: pointer;
-    max-width: 10%;
+    max-width: 3vw;
 }
 
 #links p {

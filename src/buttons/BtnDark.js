@@ -11,9 +11,9 @@ function BtnDark() {
       element.classList.toggle("dark-mode");
     }
     return (
-    <>
+    <div>
       <button onClick={darkmode}>DarkMode</button>
-    </>
+    </div>
   );
 }
 

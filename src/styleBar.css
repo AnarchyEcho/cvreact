@@ -1,0 +1,7 @@
+.sidebarBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+    height: 100vh;
+}

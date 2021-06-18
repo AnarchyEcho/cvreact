@@ -6,10 +6,10 @@ import Style from "../style.css"
 
 function About() {
   return (
-    <>
+    <div>
       <h2>About section</h2>
       <p>Theres a P here</p>
-    </>
+    </div>
   );
 }
 

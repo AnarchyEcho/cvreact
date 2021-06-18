@@ -7,41 +7,44 @@ import Style from "./style.css"
 import Portrait from "./elements/Portrait"
 import Links from "./elements/Links"
 import About from "./elements/About"
+// eslint-disable-next-line
 import DarkBtn from "./buttons/BtnDark"
 import ScrollTopBtn from "./buttons/ScrollTopBtn"
+import Sidebar from "./Sidebar"
 
 function App() {
   return (
-    <div>
+    <div id="appBody">
 
-      <div>
-        <DarkBtn />
-      </div>
-
-      <div id="title">
-        <h1>Andrè's CV Website</h1> <hr />
+      <div id="sidebar">
+        <Sidebar />
       </div>
 
-      <div id="portrait">
-        <Portrait />
-      </div>
+      <div id="main">
 
-      <div id="scrollBtn">
-        <ScrollTopBtn />
-      </div>
-      
-      <div id="about">
-        <About /> <hr />
-      </div>
-      
-      <div id="footer">
+        <div id="title">
+          <h1>Andrè's CV Website</h1> <hr />
+        </div>
+
+        <div id="portrait">
+          <Portrait />
+        </div>
+
+        <div id="scrollBtn">
+          <ScrollTopBtn />
+        </div>
+        
+        <div id="about">
+          <About /> 
+        </div>
+        
+        <hr />
 
         <div id="links">
           <Links />
         </div>
 
       </div>
-
     </div>
   );
 }
