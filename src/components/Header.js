@@ -29,7 +29,7 @@ import "../style.css";
 // eslint-disable-next-line
 import { Redirect } from "react-router";
 // eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, NavLink, useHistory} from 'react-router-dom';
 
 
 const Header = () => {
@@ -43,12 +43,16 @@ const Header = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
 
+  function redirectHome() {
+    window.location.href = "./"
+  }
+
   function redirectAbout() {
-    window.open("../About.js")
+    window.location.href = "./About"
   }
 
   function redirectProjects() {
-    window.open("../Projects.js")
+    window.location.href = "./Projects"
   }
 
   return (
@@ -72,7 +76,7 @@ const Header = () => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiHome />}>
+              <MenuItem active={true} onClick={redirectHome} icon={<FiHome />}>
                 Home
               </MenuItem>
               <MenuItem onClick={redirectProjects} icon={<FaList />}>Projects</MenuItem>

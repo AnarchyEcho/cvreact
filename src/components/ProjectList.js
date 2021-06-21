@@ -16,7 +16,7 @@ export default [
     id: "3",
     name: "Cafè Website",
     url: "https://github.com/KodeAndre/TaskCafe",
-    languages: "React",
+    languages: "HTML, CSS and JS",
     description: "Denne er noe vi gjorde for å bli vant til å sette opp nettsider i restaurant forbindelse, med en navigation linje, flere sider, bilde i bakgrunn av noe på siden og konsolidering av det vi hadde lært oss til det punktet i kurset, jeg valgte i dette prosjektet å ta bruk av google maps API-en for å få et interaktivt kart som viste hvor kaféen er. Også i dette prosjektet gikk jeg inn i dark mode toggling og å endre bilde i sammenheng med dark mode togglingen."
 },
 ]
