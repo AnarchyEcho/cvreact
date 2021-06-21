@@ -7,12 +7,14 @@ import {
   Menu,
   MenuItem,
   SidebarHeader,
+  // eslint-disable-next-line
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
 
 //import icons from react icons
 import { FaList, FaRegHeart } from "react-icons/fa";
+// eslint-disable-next-line
 import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
@@ -64,11 +66,11 @@ const Header = () => {
               <MenuItem icon={<BiCog />}>Settings</MenuItem>
             </Menu>
           </SidebarContent>
-          <SidebarFooter>
+          {/* <SidebarFooter>
             <Menu iconShape="square">
               <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
             </Menu>
-          </SidebarFooter>
+          </SidebarFooter> */}
         </ProSidebar>
       </div>
     </>

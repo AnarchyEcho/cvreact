@@ -8,10 +8,14 @@ import Style from "../style.css"
 // eslint-disable-next-line
 
 
-function Projects() {
+function Projects(props) {
   return (
     <div id="projects">
-        <p>project element</p>
+        <p>{props.projects.title}</p>
+        
+        <p>{props.projects.filler}</p>
+        
+        <p>{props.projects.summary}</p>
     </div>
   );
 }

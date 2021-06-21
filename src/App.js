@@ -35,7 +35,9 @@ function App() {
         </div>
 
         <div id="projects">
-        <Projects />
+        <Projects 
+          projects={{title: "poopoo", filler: "project be like", summary: "learned this stuff"}}
+        />
         </div>
 
         <div id="scrollBtn">
