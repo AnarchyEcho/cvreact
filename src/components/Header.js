@@ -13,16 +13,19 @@ import {
 } from "react-pro-sidebar";
 
 //import icons from react icons
+// eslint-disable-next-line
 import { FaList, FaRegHeart } from "react-icons/fa";
 // eslint-disable-next-line
 import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+// eslint-disable-next-line
 import { RiPencilLine } from "react-icons/ri";
+// eslint-disable-next-line
 import { BiCog } from "react-icons/bi";
 
 
 //import sidebar css from react-pro-sidebar module and our custom css 
 import "react-pro-sidebar/dist/css/styles.css";
-import "./Header.css";
+import "./style.css";
 
 
 const Header = () => {
@@ -61,9 +64,9 @@ const Header = () => {
                 Home
               </MenuItem>
               <MenuItem icon={<FaList />}>Projects</MenuItem>
-              <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
+              {/* <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem> */}
               <MenuItem icon={<RiPencilLine />}>About</MenuItem>
-              <MenuItem icon={<BiCog />}>Settings</MenuItem>
+              {/* <MenuItem icon={<BiCog />}>Settings</MenuItem> */}
             </Menu>
           </SidebarContent>
           {/* <SidebarFooter>

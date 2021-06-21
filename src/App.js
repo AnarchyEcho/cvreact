@@ -12,15 +12,14 @@ import About from "./components/About"
 import DarkBtn from "./buttons/BtnDark"
 import ScrollTopBtn from "./buttons/ScrollTopBtn"
 // eslint-disable-next-line
-import Sidebar from "./Sidebar"
 import Projects from "./components/Projects"
-import Header from "./components/Header/Header"
+import Header from "./components/Header"
 
 function App() {
   return (
     <div id="appBody">
 
-      <div className="sidebar">
+      <div id="sidebar">
         <Header />
       </div>
 
@@ -35,9 +34,7 @@ function App() {
         </div>
 
         <div id="projects">
-        <Projects 
-          projects={{title: "poopoo", filler: "project be like", summary: "learned this stuff"}}
-        />
+        <Projects />
         </div>
 
         <div id="scrollBtn">

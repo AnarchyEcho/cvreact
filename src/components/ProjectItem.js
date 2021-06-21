@@ -7,15 +7,18 @@ import Style from "../style.css"
 
 // eslint-disable-next-line
 import ProjectList from "./ProjectList"
-import ProjectItem from "./ProjectItem"
 
 
-function Projects(props) {
+function ProjectItem(props) {
+    const project = props.project
+    
   return (
-    <div id="projects">
-        {ProjectList.map(project => <ProjectItem project = {project} key={project.id}/>)}
+    <div>
+        <h2>{project.name}</h2>
+        <h3>Date: {project.time}</h3>
+        <p>{project.description}</p>
     </div>
-  );
+  )
 }
 
-export default Projects
+export default ProjectItem
