@@ -5,7 +5,7 @@ import ReactDOM from "react-dom"
 import Style from "../style.css"
 import Github from "../media/github/GitHub-Mark-Light-120px-plus.png"
 
-function Links() {
+function Links(e) {
   return (
     <>
       <img src={Github} onClick={openGitPopUp} alt="Github link logo"></img>

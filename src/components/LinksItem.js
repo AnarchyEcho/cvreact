@@ -1,9 +1,24 @@
+import React from "react"
 // eslint-disable-next-line
-export default [
-    {
-    id: "1",
-    name: "Github",
-    image: <img src={Github} onClick={openGitPopUp} alt="Github link logo"></img>,
-    para: <p onClick={openGitPopUp}>Github</p>
-},
-]
+import ReactDOM from "react-dom"
+// eslint-disable-next-line
+import Style from "../style.css"
+
+
+// eslint-disable-next-line
+import ProjectList from "./ProjectList"
+
+
+function ProjectItem(props) {
+    const link = props.link
+    
+  return (
+    <div>
+        <p>{link.name}</p>
+        <a>{link.url}</a>
+        
+    </div>
+  )
+}
+
+export default ProjectItem
