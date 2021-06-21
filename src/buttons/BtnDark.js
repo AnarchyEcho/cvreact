@@ -1,8 +1,11 @@
-import React from "react"
+// eslint-disable-next-line
+import React, { useState } from "react"
 // eslint-disable-next-line
 import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import Style from "../style.css"
+
+
 
 function BtnDark() {
     const element = document.body;
@@ -13,7 +16,6 @@ function BtnDark() {
       borderRadius: "3%",
       fontSize: "20px",
       cursor: "pointer",
-
    }
 
     function darkmode() {
