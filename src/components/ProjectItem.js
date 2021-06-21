@@ -15,7 +15,7 @@ function ProjectItem(props) {
   return (
     <div>
         <h2>{project.name}</h2>
-        <h3>Languages used: {project.languages}</h3>
+        <h4>Languages/Libraries used: {project.languages}</h4>
         <p>{project.description}</p>
     </div>
   )

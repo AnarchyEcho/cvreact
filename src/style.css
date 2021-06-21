@@ -29,6 +29,10 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 /* Title element */
 
 #title {
