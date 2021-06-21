@@ -33,16 +33,16 @@ function App() {
           <Portrait />
         </div>
 
+        <div id="darkbtn">
+        <DarkBtn />
+        </div>
+
         <div id="projects">
         <Projects />
         </div>
 
         <div id="scrollBtn">
           <ScrollTopBtn />
-        </div>
-
-        <div id="darkbtn">
-        <DarkBtn />
         </div>
 
         <hr />

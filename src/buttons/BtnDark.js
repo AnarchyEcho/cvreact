@@ -6,13 +6,14 @@ import Style from "../style.css"
 
 function BtnDark() {
     const element = document.body;
+    const style = {  }
 
     function darkmode() {
       element.classList.toggle("dark-mode");
     }
     return (
     <div>
-      <button onClick={darkmode}>DarkMode</button>
+      <button onClick={darkmode} style={style}>DarkMode</button>
     </div>
   );
 }
