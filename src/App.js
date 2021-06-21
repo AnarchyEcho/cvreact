@@ -4,6 +4,8 @@ import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import { Link } from "react-router";
 // eslint-disable-next-line
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+// eslint-disable-next-line
 import Style from "./style.css"
 
 import Portrait from "./components/Portrait"

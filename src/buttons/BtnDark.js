@@ -26,6 +26,4 @@ function BtnDark() {
   );
 }
 
-
-
 export default BtnDark

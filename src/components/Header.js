@@ -26,6 +26,10 @@ import { BiCog } from "react-icons/bi";
 //import sidebar css from react-pro-sidebar module and our custom css 
 import "react-pro-sidebar/dist/css/styles.css";
 import "../style.css";
+// eslint-disable-next-line
+import { Redirect } from "react-router";
+// eslint-disable-next-line
+import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 
 const Header = () => {
@@ -38,6 +42,14 @@ const Header = () => {
     //condition checking to change state from true to false and vice versa
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
+
+  function redirectAbout() {
+    window.open("../About.js")
+  }
+
+  function redirectProjects() {
+    window.open("../Projects.js")
+  }
 
   return (
     <>
@@ -63,9 +75,9 @@ const Header = () => {
               <MenuItem active={true} icon={<FiHome />}>
                 Home
               </MenuItem>
-              <MenuItem icon={<FaList />}>Projects</MenuItem>
+              <MenuItem onClick={redirectProjects} icon={<FaList />}>Projects</MenuItem>
               {/* <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem> */}
-              <MenuItem icon={<RiPencilLine />}>About</MenuItem>
+              <MenuItem onClick={redirectAbout} icon={<RiPencilLine />}>About</MenuItem>
               {/* <MenuItem icon={<BiCog />}>Settings</MenuItem> */}
             </Menu>
           </SidebarContent>
