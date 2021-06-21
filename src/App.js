@@ -6,10 +6,12 @@ import Style from "./style.css"
 
 import Portrait from "./components/Portrait"
 import Links from "./components/Links"
+// eslint-disable-next-line
 import About from "./components/About"
 // eslint-disable-next-line
 import DarkBtn from "./buttons/BtnDark"
 import ScrollTopBtn from "./buttons/ScrollTopBtn"
+// eslint-disable-next-line
 import Sidebar from "./Sidebar"
 import Projects from "./components/Projects"
 import Header from "./components/Header/Header"
