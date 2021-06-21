@@ -182,7 +182,7 @@ a {
   #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper .pro-item-content {
     color: #fff;
   }
-  #header .pro-sidebar-inner .pro-sidebar-layout .active {
+  #header .pro-sidebar-inner .pro-sidebar-layout .active:hover {
     background-image: linear-gradient(0deg, #fe9000 0%, #ffb34f 100%);
   }
   #header .logo {

@@ -79,9 +79,9 @@ const Header = () => {
               <MenuItem active={true} onClick={redirectHome} icon={<FiHome />}>
                 Home
               </MenuItem>
-              <MenuItem onClick={redirectProjects} icon={<FaList />}>Projects</MenuItem>
+              <MenuItem active={true} onClick={redirectProjects} icon={<FaList />}>Projects</MenuItem>
               {/* <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem> */}
-              <MenuItem onClick={redirectAbout} icon={<RiPencilLine />}>About</MenuItem>
+              <MenuItem active={true} onClick={redirectAbout} icon={<RiPencilLine />}>About</MenuItem>
               {/* <MenuItem icon={<BiCog />}>Settings</MenuItem> */}
             </Menu>
           </SidebarContent>
