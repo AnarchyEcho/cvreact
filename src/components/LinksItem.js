@@ -16,7 +16,6 @@ function ProjectItem(props) {
     <div>
         <p>{link.name}</p>
         <a>{link.url}</a>
-        
     </div>
   )
 }
