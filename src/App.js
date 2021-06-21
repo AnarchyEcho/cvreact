@@ -4,20 +4,22 @@ import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import Style from "./style.css"
 
-import Portrait from "./elements/Portrait"
-import Links from "./elements/Links"
-import About from "./elements/About"
+import Portrait from "./components/Portrait"
+import Links from "./components/Links"
+import About from "./components/About"
 // eslint-disable-next-line
 import DarkBtn from "./buttons/BtnDark"
 import ScrollTopBtn from "./buttons/ScrollTopBtn"
 import Sidebar from "./Sidebar"
+import Projects from "./components/Projects"
+import Header from "./components/Header/Header"
 
 function App() {
   return (
     <div id="appBody">
 
-      <div id="sidebar">
-        <Sidebar />
+      <div className="sidebar">
+        <Header />
       </div>
 
       <div id="main">
@@ -30,8 +32,16 @@ function App() {
           <Portrait />
         </div>
 
+        <div id="projects">
+        <Projects />
+        </div>
+
         <div id="scrollBtn">
           <ScrollTopBtn />
+        </div>
+
+        <div id="darkbtn">
+        <DarkBtn />
         </div>
 
         <hr />

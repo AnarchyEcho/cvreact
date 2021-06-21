@@ -2,6 +2,7 @@
     max-width: 100vw;
     max-height: 100vh;
     font-family: arial;
+    overflow-y: hidden;
 }
 
 /* General elements */
@@ -43,9 +44,19 @@ h1 {
     object-fit: contain;
 }
 
-/* About element */
+/* Projects element */
 
+#projects {
+    display: flex;
+    justify-content: center;   
+}
 
+/* Placeholder element */
+
+#darkbtn {
+    display: flex;
+    justify-content: center;   
+}
 
 /* Links element */
 

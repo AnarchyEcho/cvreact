@@ -5,11 +5,11 @@ import ReactDOM from "react-dom"
 import StyleBar from "./styleBar.css"
 
 // eslint-disable-next-line
-import Portrait from "./elements/Portrait"
+import Portrait from "./components/Portrait"
 // eslint-disable-next-line
-import Links from "./elements/Links"
+import Links from "./components/Links"
 // eslint-disable-next-line
-import About from "./elements/About"
+import About from "./components/About"
 // eslint-disable-next-line
 import DarkBtn from "./buttons/BtnDark"
 // eslint-disable-next-line
