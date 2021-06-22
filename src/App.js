@@ -53,6 +53,14 @@ function App() {
         </Switch>
         </div>
 
+        <div id="about">
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
+
         <div id="scrollBtn">
           <ScrollTopBtn />
         </div>

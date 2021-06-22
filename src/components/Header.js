@@ -20,7 +20,7 @@ import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-i
 // eslint-disable-next-line
 import { RiPencilLine } from "react-icons/ri";
 // eslint-disable-next-line
-import { BiCog } from "react-icons/bi";
+import { BiCog, BiRefresh } from "react-icons/bi";
 
 
 //import sidebar css from react-pro-sidebar module and our custom css 
@@ -55,6 +55,13 @@ const Header = () => {
   //   window.location.href = "./Projects"
   // }
 
+  function refresh() {
+    const interval = setTimeout(() => {
+      window.location.reload();
+    }, 1);
+    return () => clearInterval(interval);
+  }
+
   return (
     <>
       <div id="header">
@@ -79,13 +86,13 @@ const Header = () => {
 
               <Router>
                 <MenuItem active={true} icon={<FiHome />}>
-                  <Link to="/">Home</Link>
+                  <Link to="/" onClick={refresh}>Home</Link>
                 </MenuItem>
               </Router>
 
               <Router>
                 <MenuItem active={true} icon={<FaList />}>
-                  <Link to="/projects">Projects</Link>
+                  <Link to="/projects" onClick={refresh}>Projects</Link>
                 </MenuItem>
               </Router>
 
@@ -93,7 +100,7 @@ const Header = () => {
 
               <Router>
                 <MenuItem active={true} icon={<RiPencilLine />}>
-                  <Link to="/about">About</Link>
+                  <Link to="/about" onClick={refresh}>About</Link>
                 </MenuItem>
               </Router>
 
