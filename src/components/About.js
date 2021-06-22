@@ -19,12 +19,12 @@ function About() {
       </p>
     <hr />
 
-      <h2>Contact me with:</h2>
+      <h2>Contact me</h2>
       <p>
-        Email: andre.kodehode@gmail.com
+        <b>Email:</b> andre.kodehode@gmail.com
       </p>
       <p>
-        Phone: +47 222 22 222
+        <b>Phone:</b> +47 222 22 222
       </p>
 
     </div>
