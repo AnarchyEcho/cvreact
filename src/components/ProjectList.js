@@ -18,5 +18,10 @@ export default [
     url: "https://github.com/KodeAndre/TaskCafe",
     languages: "HTML, CSS and JS",
     description: "Denne er noe vi gjorde for å bli vant til å sette opp nettsider i restaurant forbindelse, med en navigation linje, flere sider, bilde i bakgrunn av noe på siden og konsolidering av det vi hadde lært oss til det punktet i kurset, jeg valgte i dette prosjektet å ta bruk av google maps API-en for å få et interaktivt kart som viste hvor kaféen er. Også i dette prosjektet gikk jeg inn i dark mode toggling og å endre bilde i sammenheng med dark mode togglingen."
-},
-]
+}, {
+    id: "4",
+    name: "Tic Tac Toe",
+    url: "https://github.com/KodeAndre/test-app",
+    languages: "React",
+    description: "Dette var mitt første møte med ReactJS i skikkeligheten og var gjort i sammenheng med å venne seg til React og hvordan det fungerer, tok et par minutter å forstå oppsettet men etter det så gikk det helt greit, veldig robust og modulært språk som virker veldig bra for å lage websider."
+}, ]

@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React, { setState } from "react"
+import React, { setState, useEffect, } from "react"
 // eslint-disable-next-line
 import ReactDOM from "react-dom"
 // eslint-disable-next-line
@@ -19,9 +19,10 @@ import Projects from "./components/Projects"
 import Header from "./components/Header"
 
 function App() {
+
   return (
     <div id="appBody">
-    
+
       <div id="sidebar">
         <Header />
       </div>
@@ -29,7 +30,7 @@ function App() {
       <div id="main">
       <Router>
         <div id="title">
-          <h1>Andrè's CV Website</h1> <hr />
+            <h1>Andrè's CV Website</h1> <hr />
         </div>
 
         <div id="darkbtn">
