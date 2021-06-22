@@ -3,9 +3,7 @@ import React, { setState } from "react"
 // eslint-disable-next-line
 import ReactDOM from "react-dom"
 // eslint-disable-next-line
-import { Link } from "react-router";
-// eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 // eslint-disable-next-line
 import Style from "./style.css"
 
@@ -23,27 +21,35 @@ import Header from "./components/Header"
 function App() {
   return (
     <div id="appBody">
-
+    
       <div id="sidebar">
         <Header />
       </div>
 
       <div id="main">
-
+      <Router>
         <div id="title">
           <h1>Andrè's CV Website</h1> <hr />
         </div>
 
-        <div id="portrait">
-          <Portrait />
+        <div id="darkbtn">
+          <DarkBtn />
         </div>
 
-        <div id="darkbtn">
-        <DarkBtn />
+        <div id="portrait">        
+        <Switch>
+          <Route exact path="/">
+            <Portrait />
+          </Route>
+        </Switch>      
         </div>
 
         <div id="projects">
-        <Projects />
+        <Switch>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+        </Switch>
         </div>
 
         <div id="scrollBtn">
@@ -55,7 +61,7 @@ function App() {
         <div id="links">
           <Links />
         </div>
-
+        </Router>
       </div>
     </div>
   );

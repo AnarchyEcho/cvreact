@@ -29,7 +29,7 @@ import "../style.css";
 // eslint-disable-next-line
 import { Redirect } from "react-router";
 // eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route, Link, NavLink, useHistory} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 
 const Header = () => {
@@ -43,17 +43,17 @@ const Header = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
 
-  function redirectHome() {
-    window.location.href = "./"
-  }
+  // function redirectHome() {
+  //   window.location.href = "./"
+  // }
 
-  function redirectAbout() {
-    window.location.href = "./About"
-  }
+  // function redirectAbout() {
+  //   window.location.href = "./About"
+  // }
 
-  function redirectProjects() {
-    window.location.href = "./Projects"
-  }
+  // function redirectProjects() {
+  //   window.location.href = "./Projects"
+  // }
 
   return (
     <>
@@ -76,12 +76,27 @@ const Header = () => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={true} onClick={redirectHome} icon={<FiHome />}>
-                Home
-              </MenuItem>
-              <MenuItem active={true} onClick={redirectProjects} icon={<FaList />}>Projects</MenuItem>
+
+              <Router>
+                <MenuItem active={true} icon={<FiHome />}>
+                  <Link to="/">Home</Link>
+                </MenuItem>
+              </Router>
+
+              <Router>
+                <MenuItem active={true} icon={<FaList />}>
+                  <Link to="/projects">Projects</Link>
+                </MenuItem>
+              </Router>
+
               {/* <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem> */}
-              <MenuItem active={true} onClick={redirectAbout} icon={<RiPencilLine />}>About</MenuItem>
+
+              <Router>
+                <MenuItem active={true} icon={<RiPencilLine />}>
+                  <Link to="/about">About</Link>
+                </MenuItem>
+              </Router>
+
               {/* <MenuItem icon={<BiCog />}>Settings</MenuItem> */}
             </Menu>
           </SidebarContent>

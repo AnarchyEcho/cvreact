@@ -13,7 +13,7 @@ import ProjectItem from "./ProjectItem"
 function Projects(props) {
   return (
     <div id="projects">
-        {ProjectList.map(project => <ProjectItem project = {project} key={project.id}/>)}
+      {ProjectList.map(project => <ProjectItem project = {project} key={project.id}/>)}
     </div>
   );
 }
