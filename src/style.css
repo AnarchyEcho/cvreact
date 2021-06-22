@@ -67,10 +67,7 @@ a {
 
 /* Placeholder things */
 
-#darkbtn {
-    display: flex;
-    justify-content: center;   
-}
+
 
 /* Links element */
 
@@ -108,6 +105,11 @@ a {
 }
 
 /* Darkmode */
+
+#darkbtn {
+  display: flex;
+  justify-content: center;   
+}
 
 .dark-mode {
     background-color: #FAFAFA;

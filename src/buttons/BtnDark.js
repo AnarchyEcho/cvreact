@@ -10,12 +10,12 @@ import Style from "../style.css"
 function BtnDark() {
     const element = document.body;
     const style = {
-      border: "none",
       backgroundImage: "linear-gradient(0deg, #fe9000 0%, #ffb34f 100%)",
       color: "#000",
       borderRadius: "3%",
       fontSize: "20px",
       cursor: "pointer",
+      border: "2px solid #121212",
    }
 
     function darkmode() {
