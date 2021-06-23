@@ -7,8 +7,6 @@ import Style from "../style.css"
 
 // eslint-disable-next-line
 import ProjectList from "./ProjectList"
-// eslint-disable-next-line
-import Darkmode from "../buttons/BtnDark"
 
 
 function ProjectItem(props) {
