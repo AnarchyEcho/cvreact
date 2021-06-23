@@ -4,7 +4,7 @@ import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import Style from "../style.css"
 import Github from "../media/github/GitHub-Mark-Light-120px-plus.png"
-import LinkedIn from "../media/LinkedInLogo.png"
+import LinkedIn from "../media/linkedin/LinkedInLogo.png"
 
 const style = {
     filter: "none"
