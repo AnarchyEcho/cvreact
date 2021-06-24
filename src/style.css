@@ -168,6 +168,10 @@ a {
     min-width: 100%;
   }
 
+  #header .pro-sidebar .closemenu {
+    padding-right: 5px;
+  }
+
   #header .pro-sidebar.collapsed {
     width: 90px;
     min-width: 80px;
