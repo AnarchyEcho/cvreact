@@ -89,6 +89,10 @@ a {
   font-size: 28px;
 }
 
+#about p {
+  padding-bottom: 0.1%;
+}
+
 /* Links element */
 
 #links {
