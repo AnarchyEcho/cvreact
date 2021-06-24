@@ -13,6 +13,7 @@ import ProjectItem from "./ProjectItem"
 function Projects(props) {
   return (
     <div id="projects">
+      <p className="disclaimer">*The project titles are links</p>
       {ProjectList.map(project => <ProjectItem project = {project} key={project.id}/>)}
     </div>
   );

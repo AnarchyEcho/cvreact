@@ -40,6 +40,10 @@ a {
   color: #fe9000;
 }
 
+p {
+  line-height: 1.5;
+}
+
 /* Title element */
 
 #title {
@@ -69,7 +73,6 @@ a {
 #projects .disclaimer {
   text-align: center;
   color: grey;
-  transform: translateX(16%);
 }
 
 #projects h2 {
