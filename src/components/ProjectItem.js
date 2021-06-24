@@ -16,6 +16,7 @@ function ProjectItem(props) {
     <div>{// eslint-disable-next-line
         <h2><a href={project.url} target="_blank">{project.name}</a></h2>}
         <h4>Languages/Libraries used: {project.languages}</h4>
+        {project.api === "" ? null : <h4>API's Used: {project.api}</h4>}
         <p>{project.description}</p>
     </div>
   )
