@@ -43,18 +43,6 @@ const Header = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
 
-  // function redirectHome() {
-  //   window.location.href = "./"
-  // }
-
-  // function redirectAbout() {
-  //   window.location.href = "./About"
-  // }
-
-  // function redirectProjects() {
-  //   window.location.href = "./Projects"
-  // }
-
   return (
     <>
       <div id="header">
