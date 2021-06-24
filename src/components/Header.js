@@ -55,12 +55,12 @@ const Header = () => {
   //   window.location.href = "./Projects"
   // }
 
-  function refresh() {
-    const interval = setTimeout(() => {
-      window.location.reload();
-    }, 1);
-    return () => clearInterval(interval);
-  }
+  // function refresh() {
+  //   const interval = setTimeout(() => {
+  //     window.location.reload();
+  //   }, 1);
+  //   return () => clearInterval(interval);
+  // }
 
   return (
     <>
@@ -84,25 +84,25 @@ const Header = () => {
           <SidebarContent>
             <Menu iconShape="square">
 
-              <Router>
+              
                 <MenuItem active={true} icon={<FiHome />}>
-                  <Link to="/" onClick={refresh}>Home</Link>
+                  <Link to="/" >Home</Link>
                 </MenuItem>
-              </Router>
+              
 
-              <Router>
+              
                 <MenuItem active={true} icon={<FaList />}>
-                  <Link to="/projects" onClick={refresh}>Projects</Link>
+                  <Link to="/projects" >Projects</Link>
                 </MenuItem>
-              </Router>
+              
 
               {/* <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem> */}
 
-              <Router>
+              
                 <MenuItem active={true} icon={<RiPencilLine />}>
-                  <Link to="/about" onClick={refresh}>About</Link>
+                  <Link to="/about" >About</Link>
                 </MenuItem>
-              </Router>
+              
 
               {/* <MenuItem icon={<BiCog />}>Settings</MenuItem> */}
             </Menu>

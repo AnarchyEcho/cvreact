@@ -22,13 +22,13 @@ function App() {
 
   return (
     <div id="appBody">
-
+      <Router>
       <div id="sidebar">
         <Header />
       </div>
 
       <div id="main">
-      <Router>
+      
         <div id="title">
             <h1>Andrè's CV Website</h1> <hr />
         </div>
@@ -39,26 +39,20 @@ function App() {
 
         <div id="portrait">        
         <Switch>
-          <Route exact path="/">
-            <Portrait />
-          </Route>
-        </Switch>      
+        <Route path="/" exact component={Portrait} />
+        </Switch>     
         </div>
 
         <div id="projects">
         <Switch>
-          <Route path="/projects">
-            <Projects />
-          </Route>
+          <Route path="/projects" component={Projects} />
         </Switch>
         </div>
 
         <div id="about">
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-          </Switch>
+        <Switch>
+        <Route path="/about" component={About} />
+        </Switch>  
         </div>
 
         <div id="scrollBtn">
@@ -70,8 +64,9 @@ function App() {
         <div id="links">
           <Links />
         </div>
-        </Router>
+        
       </div>
+      </Router>
     </div>
   );
 }
