@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 // eslint-disable-next-line
 import ReactDOM from "react-dom"
 // eslint-disable-next-line
@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 function ScrollTopBtn() {
-    const style = { display: "block",
+    let style = { display: "block",
         position: "fixed",
         bottom: "20px",
         right: "3%",
@@ -27,12 +27,25 @@ function ScrollTopBtn() {
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }
     
+      const [offset, setOffset] = useState(0);
+
+      useEffect(() => {
+        window.onscroll = () => {
+          setOffset(window.pageYOffset)
+        }
+      }, []);
+    
+      // console.log(offset);
+
+      if (offset < 150) style = {opacity: 0}
+
     return (
     <>
       <button onClick={topFunction} style={style}> <FontAwesomeIcon icon={faArrowUp} /> </button>
     </>
   );
 }
+
 
 
 
