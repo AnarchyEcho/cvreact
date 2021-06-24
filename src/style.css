@@ -66,6 +66,12 @@ a {
     transform: translateX(16%);
 }
 
+#projects .disclaimer {
+  text-align: center;
+  color: grey;
+  transform: translateX(16%);
+}
+
 #projects h2 {
   font-size: 1.9rem;
 }

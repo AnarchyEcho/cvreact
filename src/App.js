@@ -46,6 +46,7 @@ function App() {
         </div>
 
         <div id="projects">
+        <p className="disclaimer">*The project titles are links</p>
           <Switch>
             <Route path="/projects" component={Projects} />
           </Switch>
@@ -70,7 +71,7 @@ function App() {
       </div>
 
       </Router>
-      
+
     </div>
   );
 }
