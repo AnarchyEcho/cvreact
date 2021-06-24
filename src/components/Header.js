@@ -55,13 +55,6 @@ const Header = () => {
   //   window.location.href = "./Projects"
   // }
 
-  // function refresh() {
-  //   const interval = setTimeout(() => {
-  //     window.location.reload();
-  //   }, 1);
-  //   return () => clearInterval(interval);
-  // }
-
   return (
     <>
       <div id="header">
