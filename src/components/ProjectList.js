@@ -1,3 +1,4 @@
+// List of projects that i can add to whenever i have an addition to make.
 // eslint-disable-next-line
 export default [
     {

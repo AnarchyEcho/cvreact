@@ -1,3 +1,4 @@
+// List of Links, might use in the future but for now defunct.
 // eslint-disable-next-line
 export default [
     {

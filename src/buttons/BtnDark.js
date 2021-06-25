@@ -8,7 +8,10 @@ import Style from "../style.css"
 
 
 function BtnDark() {
+    // target for darkmode css toggling
     const element = document.body;
+    
+    // css for the button
     const style = {
       backgroundImage: "linear-gradient(0deg, #fe9000 0%, #ffb34f 100%)",
       color: "#000",
@@ -18,6 +21,7 @@ function BtnDark() {
       border: "2px solid #121212",
    }
 
+    // function that toggles targeted css from css file
     function darkmode() {
       element.classList.toggle("dark-mode");
     }

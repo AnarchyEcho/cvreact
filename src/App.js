@@ -18,6 +18,8 @@ import ScrollTopBtn from "./buttons/ScrollTopBtn"
 import Projects from "./components/Projects"
 import Header from "./components/Header"
 
+
+// app with routing for Single-Page Application (SPA)
 function App() {
 
   return (
