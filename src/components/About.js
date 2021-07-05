@@ -4,6 +4,8 @@ import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import Style from "../style.css"
 
+import ContactModal from "./ContactModal"
+
 function About() {
   return (
     <div>
@@ -20,12 +22,8 @@ function About() {
     <hr />
 
       <h2>Contact me</h2>
-      <p>
-        <b>Email:</b> andre.kodehode@gmail.com
-      </p>
-      <p>
-        <b>Phone:</b> +47 222 22 222
-      </p>
+      
+      <ContactModal />
 
     </div>
   );
