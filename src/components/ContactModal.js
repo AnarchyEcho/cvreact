@@ -4,6 +4,7 @@ import Modal from "react-modal"
 // eslint-disable-next-line
 import Style from "../style.css"
 
+
 const modalStyles = {
     overlay : {
         backgroundColor: "rgba(12, 12, 12, 0.7)",
@@ -13,8 +14,10 @@ const modalStyles = {
         color: "#fff",
         margin: "0 auto",
         padding: "20px",
+        maxWidth: "350px",
+        maxHeight: "200px",
         width: "50vw",
-        height: "20vh",
+        height: "30%",
         position: "relative",
         inset: "25vh 0 0 0",
         borderRadius: "10px",
@@ -30,7 +33,8 @@ const modalButton = {
     fontSize: "16px",
     cursor: "pointer",
     border: "2px solid #121212",
-}
+};
+
 
 export default function ContactModal() {
     
@@ -45,9 +49,9 @@ export default function ContactModal() {
     }
 
     return (
-        <div>
+        <div id="aboutModal">
             <div id="overlay">
-                <Modal style={modalStyles} isOpen={modalIsOpen} onRequestClose={()=> setModalIsOpen(false)}>
+                <Modal style={modalStyles} isOpen={modalIsOpen} onRequestClose={()=> setModalIsOpen(false)} ariaHideApp={false}>
                     <p>
                         <b>Email:</b> andre.kodehode@gmail.com
                         </p>
