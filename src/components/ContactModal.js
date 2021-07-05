@@ -5,6 +5,9 @@ import Modal from "react-modal"
 import Style from "../style.css"
 
 const modalStyles = {
+    overlay : {
+        backgroundColor: "rgba(12, 12, 12, 0.7)",
+    },
     content : {
         backgroundColor: "#121212",
         color: "#fff",
@@ -13,26 +16,20 @@ const modalStyles = {
         width: "50vw",
         height: "20vh",
         position: "relative",
-        inset: "25vh 0 0 0"
+        inset: "25vh 0 0 0",
+        borderRadius: "10px",
+        border: "#fe9000 solid 1px",
     }
 };
 
-const overlayStyles = {
-    content : {
-        width: "100%",
-        height: "100%",
-        backgroundColor: "rgba(12, 12, 12, 0.2)",
-        position: "absolute",
-        top: "0",
-        bottom: "0",
-        left: "0",
-        right: "0",
-  }
-}
-
 const modalButton = {
-    top: "100%",
-    bottom: "0"
+    inset: "0 0 0 0",
+    backgroundImage: "linear-gradient(0deg, #fe9000 0%, #ffb34f 100%)",
+    color: "#000",
+    borderRadius: "3%",
+    fontSize: "16px",
+    cursor: "pointer",
+    border: "2px solid #121212",
 }
 
 export default function ContactModal() {
@@ -49,19 +46,20 @@ export default function ContactModal() {
 
     return (
         <div>
-            <div id="overlay" style={overlayStyles}>
+            <div id="overlay">
                 <Modal style={modalStyles} isOpen={modalIsOpen} onRequestClose={()=> setModalIsOpen(false)}>
                     <p>
                         <b>Email:</b> andre.kodehode@gmail.com
-                        </p>                        <p>
+                        </p>
+                    <p>
                         <b>Phone:</b> +47 222 22 222
                     </p>
-                    <button onClick={setModalIsOpenToFalse} style={modalButton}>Close</button>
+                    <button onClick={setModalIsOpenToFalse} style={modalButton}>Close Information</button>
                 </Modal>
             </div>
 
             <div>
-                <button onClick={setModalIsOpenToTrue}>Contact Me 📨</button>
+                <button onClick={setModalIsOpenToTrue} style={modalButton}>Open Information</button>
             </div>
 
         </div>
