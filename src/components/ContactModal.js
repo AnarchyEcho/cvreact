@@ -22,7 +22,8 @@ const modalStyles = {
         inset: "25vh 0 0 0",
         borderRadius: "10px",
         border: "#fe9000 solid 1px",
-    }
+        textAlign: "center",
+    },
 };
 
 const modalButton = {
@@ -58,7 +59,7 @@ export default function ContactModal() {
                     <p>
                         <b>Phone:</b> +47 222 22 222
                     </p>
-                    <button onClick={setModalIsOpenToFalse} style={modalButton}>Close Information</button>
+                    <button onClick={setModalIsOpenToFalse} style={modalButton} id="closeBtn">Close Information</button>
                 </Modal>
             </div>
 
