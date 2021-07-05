@@ -36,11 +36,11 @@ export default function ContactModal() {
     
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    const setModalIsOpenToTrue =()=>{
+    const setModalIsOpenToTrue = () => {
         setModalIsOpen(true)
     }
 
-    const setModalIsOpenToFalse =()=>{
+    const setModalIsOpenToFalse = () => {
         setModalIsOpen(false)
     }
 
