@@ -14,11 +14,19 @@ const style = {
 function Links(e) {
   return (
     <>
-      <img src={Github} onClick={openGitPopUp} alt="Github link logo" id="github"></img>
-      <p onClick={openGitPopUp}>Github</p>
+      <div id="copyright">
+        <p>&copy; Copyright 2021 Andre Hagen</p>
+      </div>
 
-      <img src={LinkedIn} onClick={openLiPopUp} alt="LinkedIn link logo" id="linkedin" style={style}></img>
-      <p onClick={openLiPopUp}>LinkedIn</p>
+        <div className="github">
+          <img src={Github} onClick={openGitPopUp} alt="Github link logo" id="github"></img>
+          <p onClick={openGitPopUp}>Github</p>
+        </div>
+
+        <div className="linkedin">
+          <img src={LinkedIn} onClick={openLiPopUp} alt="LinkedIn link logo" id="linkedin" style={style}></img>
+          <p onClick={openLiPopUp}>LinkedIn</p>
+        </div>
     </>
   );
 }

@@ -104,15 +104,34 @@ p {
 
 /* Links element */
 
+#links #copyright {
+  justify-self: end;  
+  grid-area: Copyright;
+}
+
+#links .github {
+  justify-self: end; 
+  align-self: center; 
+  grid-area: Github; 
+}
+
+#links .linkedin {
+  justify-self: start; 
+  align-self: center; 
+  grid-area: Linkedin;
+  margin-left: 20px;
+}
+
 #links {
     margin-top: 1em;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    padding-bottom: 1%;
-    transform: translateX(2.5%);
-    max-width: 95vw;
+    display: grid;  
+    grid-auto-rows: 1fr; 
+    grid-template-columns:  1fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Copyright Github Linkedin"; 
 }
 
 #links img{
@@ -125,8 +144,8 @@ p {
 #links p {
     cursor: pointer;
     font-weight: bold;
-    padding: 0 1em 0 0.2em;
-    transform: translateY(0.3em)
+    /* padding: 0 1em 0 0.2em; */
+    /* transform: translateY(0.3em) */
 }
 
 #links a{
