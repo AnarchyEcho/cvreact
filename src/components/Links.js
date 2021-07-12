@@ -15,7 +15,7 @@ function Links(e) {
   return (
     <>
       <div id="copyright">
-        <p>&copy; Copyright 2021 Andre Hagen</p>
+        <p onClick={openGitPopUp}>&copy; Copyright 2021 Andre Hagen</p>
       </div>
 
         <div className="github">

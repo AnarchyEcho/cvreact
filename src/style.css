@@ -228,10 +228,15 @@ p {
     overflow-y: hidden;
   }
 
+  .pro-sidebar .pro-menu a {
+    text-decoration: none;
+    color: #fe9000;
+}
+
   #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
     font-size: 20px;
     padding: 0 20px 0 5px;
-    color: #fff;
+    color: #fe9000;
     font-weight: bold;
   }
 
@@ -246,8 +251,8 @@ p {
   }
 
   #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
-    background-color: #c3c3c3;
-    color: #000;
+    background-color: #202020;
+    color: #fe9000;
     border-radius: 3px;
   }
 
