@@ -64,7 +64,7 @@ export default function ContactModal() {
             </div>
 
             <div>
-                <button onClick={setModalIsOpenToTrue} style={modalButton}>Open Information</button>
+                <button onClick={setModalIsOpenToTrue} style={modalButton}>Open for Information</button>
             </div>
 
         </div>
