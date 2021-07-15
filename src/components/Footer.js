@@ -21,6 +21,8 @@ const norBtn = {
     backgroundColor: "#ffffff00",
     cursor: "pointer",
     transform: "scale(0.8)",
+    marginTop: "0",
+    paddingTop: "0",
   }
 
 const engBtn = {
@@ -28,6 +30,8 @@ const engBtn = {
     backgroundColor: "#ffffff00",
     cursor: "pointer",
     transform: "scale(0.8)",
+    marginTop: "0",
+    paddingTop: "0",
 }
 
 function Links(e) {
