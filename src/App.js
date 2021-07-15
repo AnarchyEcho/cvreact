@@ -34,7 +34,7 @@ export default function App() {
       <div id="main">
       
         <div id="title">
-            <h1>Andrè's CV Website</h1> <hr />
+            <h1>Andrè's CV</h1> <hr />
         </div>
 
         <div id="darkbtn">
