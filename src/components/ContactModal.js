@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Modal from "react-modal"
 // eslint-disable-next-line
 import Style from "../style.css"
-
+import { useTranslation } from "react-i18next";
 
 const modalStyles = {
     overlay : {
@@ -38,7 +38,9 @@ const modalButton = {
 
 
 export default function ContactModal() {
-    
+    // eslint-disable-next-line
+    const {t, i18n} = useTranslation('common');
+
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const setModalIsOpenToTrue = () => {
@@ -59,12 +61,12 @@ export default function ContactModal() {
                     <p>
                         <b>Phone:</b> +47 222 22 222
                     </p>
-                    <button onClick={setModalIsOpenToFalse} style={modalButton} id="closeBtn">Close Information</button>
+                    <button onClick={setModalIsOpenToFalse} style={modalButton} id="closeBtn">{t('info.close')}</button>
                 </Modal>
             </div>
 
             <div>
-                <button onClick={setModalIsOpenToTrue} style={modalButton}>Open for Information</button>
+                <button onClick={setModalIsOpenToTrue} style={modalButton}>{t('info.open')}</button>
             </div>
 
         </div>

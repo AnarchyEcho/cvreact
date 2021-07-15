@@ -5,17 +5,24 @@ import ReactDOM from "react-dom"
 import Style from "../style.css"
 import Github from "../media/github/GitHub-Mark-Light-120px-plus.png"
 import LinkedIn from "../media/linkedin/LinkedInLogo.png"
-
+import { useTranslation } from "react-i18next";
 // css to apply to all buttons that dont need to be converted in darkmode
 const style = {
     filter: "none"
 }
 
 function Links(e) {
+  // eslint-disable-next-line
+  const {t, i18n} = useTranslation('common');
   return (
     <>
       <div id="copyright">
         <p onClick={openGitPopUp}>&copy; Copyright 2021 Andre Hagen</p>
+      </div>
+
+      <div id="languagePicker">
+      <button onClick={() => i18n.changeLanguage('no')}>no</button>
+      <button onClick={() => i18n.changeLanguage('en')}>en</button>
       </div>
 
         <div className="github">

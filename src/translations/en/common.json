@@ -1,0 +1,18 @@
+{
+	"background": {
+		"fill": "I have a background in hardware and SYSAdmin work with 2 separate companies, one where i fixed and did maintenance on PC's, Laptops and other technical hardware, and one where i maintained and made a webstore for the company, and helped with general IT.",
+		"title": "Job Background"
+	},
+	"contact": {
+		"title": "Contact me"
+	},
+	"info": {
+		"close": "Close Information",
+		"open": "Open for Information"
+	},
+	"recent": {
+		"fill": "In recent weeks, I have worked on several projects, such as the CV page and a portfolio page for a client, which has given me much more knowledge within React.",
+		"title": "Recent History"
+	},
+	"welcome": "Welcome"
+}
