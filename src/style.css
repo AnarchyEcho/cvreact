@@ -272,7 +272,52 @@ p {
     #header {
       top: 0;
       left: 0;
+      max-width: 5%;
     }
+    #header .pro-sidebar-inner {
+      background-color: #16161600;
+      box-shadow: none;
+    }
+    #header .pro-sidebar-inner .pro-sidebar-layout .active:hover {
+      background: 0;
+    }
+    #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+      display: none;
+    }
+    #header .pro-sidebar-inner .pro-sidebar-layout ul {
+      position: absolute;
+      top: 40vh;
+      left: 0;
+    }
+    #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+      font-size: 0;
+      margin-bottom: 50%;
+    }
+    #header .closemenu {
+      display: none;
+    }
+    #header .pro-sidebar-inner .pro-sidebar-layout ul {
+      padding: none;
+      width: 15%;
+    }
+    #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper .pro-item-content {
+      padding: 0;
+      width: 5%;
+    }
+    #header .pro-sidebar.collapsed {
+      width: 15vw;
+      min-width: 1px;
+    }
+    #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+      position: absolute;
+      background-color: #202020;
+      color: #fe9000;
+      border-radius: 3px;
+      left: 0;
+    }
+    .pro-sidebar.collapsed .pro-menu > ul > .pro-menu-item {
+      display: inline-block;
+  }
   }
 
   /* Media queries */
