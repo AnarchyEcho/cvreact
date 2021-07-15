@@ -273,6 +273,7 @@ p {
       top: 0;
       left: 0;
       max-width: 5%;
+      transform: scale(1.2);
     }
     #header .pro-sidebar-inner {
       background-color: #16161600;
@@ -286,7 +287,7 @@ p {
     }
     #header .pro-sidebar-inner .pro-sidebar-layout ul {
       position: absolute;
-      top: 40vh;
+      top: 30%;
       left: 0;
     }
     #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
@@ -317,7 +318,7 @@ p {
     }
     .pro-sidebar.collapsed .pro-menu > ul > .pro-menu-item {
       display: inline-block;
-  }
+    }
   }
 
   /* Media queries */
