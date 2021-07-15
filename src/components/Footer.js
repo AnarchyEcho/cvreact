@@ -20,12 +20,14 @@ const norBtn = {
     marginRight: "10px",
     backgroundColor: "#ffffff00",
     cursor: "pointer",
+    transform: "scale(0.8)",
   }
 
 const engBtn = {
     border: "none",
     backgroundColor: "#ffffff00",
     cursor: "pointer",
+    transform: "scale(0.8)",
 }
 
 function Links(e) {
