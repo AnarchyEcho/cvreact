@@ -25,7 +25,7 @@ function App() {
   return (
     <div id="appBody">
 
-      <Router homepage="/cvreact">
+      <Router basename="/cvreact">
       
       <div id="sidebar">
         <Header />
