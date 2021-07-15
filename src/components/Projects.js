@@ -16,7 +16,6 @@ export default function Projects(props) {
     <div id="projects">
       <p className="disclaimer">*The project titles are links</p>
       {ProjectList.map(project => <ProjectItem project = {project} key={project.id}/>)}
-);
     </div>
   );
 }
