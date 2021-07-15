@@ -10,7 +10,7 @@ import Style from "./style.css"
 import { useTranslation } from "react-i18next";
 
 import Portrait from "./components/Portrait"
-import Links from "./components/Links"
+import Links from "./components/Footer"
 // eslint-disable-next-line
 import About from "./components/About"
 // eslint-disable-next-line
