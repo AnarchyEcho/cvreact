@@ -6,13 +6,13 @@ import Style from "../style.css"
 
 import ContactModal from "./ContactModal"
 
-function About() {
+export default function About() {
   return (
     <div>
       
       <h2>Nylig Historie</h2>
       <p>
-        Jeg har i de siste ukene studert kode og jobbet med samtlige prosjekter innen HTML, CSS og JavaScript i JobLoop sitt KodeHode kurs, alle prosjektene ligger på github og inneholder f.eks; et Blackjack spill lagd med JS, et Tic-Tac-Toe spill i ReactJS, og har laget et galleri med for det meste HTML og CSS for en venn. Vi har også jobbet med responsivt design og hatt fokus på det og ren kode som er leselig for de som kommer etter.
+        Jeg har i de siste ukene jobbet med flere prosjekter, som CV siden og en porteføljeside for en klient, som har gitt meg mye mer kunnskap innen React.
       </p>
 
       <h2>Jobb Bakgrunn</h2>
@@ -28,7 +28,3 @@ function About() {
     </div>
   );
 }
-
-
-
-export default About

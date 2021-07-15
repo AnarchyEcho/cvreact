@@ -9,7 +9,7 @@ import Style from "../style.css"
 import ProjectList from "./ProjectList"
 
 
-function ProjectItem(props) {
+export default function ProjectItem(props) {
     const link = props.link
     
   return (
@@ -19,5 +19,3 @@ function ProjectItem(props) {
     </div>
   )
 }
-
-export default ProjectItem
