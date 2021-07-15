@@ -107,7 +107,14 @@ p {
 #links #copyright {
   justify-self: end;  
   grid-area: Copyright;
+  color: #ffffff50;
 }
+#links #copyright:hover {
+  justify-self: end;  
+  grid-area: Copyright;
+  color: #ffffff;
+}
+
 
 #links .github {
   justify-self: end; 
