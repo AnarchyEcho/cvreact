@@ -3,25 +3,28 @@ import React from "react"
 import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import Style from "../style.css"
+import { useTranslation } from "react-i18next";
 
 import ContactModal from "./ContactModal"
 
 export default function About() {
+  // eslint-disable-next-line
+  const {t, i18n} = useTranslation('common');
   return (
     <div>
       
-      <h2>Nylig Historie</h2>
+      <h2>{t('recent.title')}</h2>
       <p>
-        Jeg har i de siste ukene jobbet med flere prosjekter, som CV siden og en porteføljeside for en klient, som har gitt meg mye mer kunnskap innen React.
+        {t('recent.fill')}
       </p>
 
-      <h2>Jobb Bakgrunn</h2>
+      <h2>{t('background.title')}</h2>
       <p>
-      Har bakgrunn i Hardware og SYSAdmin arbeid på 2 forskjellige plasser, der jeg fikset og vedlikeholdet PCer, laptoper og annet teknisk hardware, som SYSAdmin gjorde jeg valg om nettbutikk og vedlikehold i den nettbutikken for selskapet, og hjalp med generell IT i selskapet.
+        {t('background.fill')}
       </p>
     <hr />
 
-      <h2>Contact me</h2>
+      <h2>{t('contact.title')}</h2>
       
       <ContactModal />
 

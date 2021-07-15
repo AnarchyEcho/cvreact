@@ -1,0 +1,18 @@
+{
+	"background": {
+		"fill": "Jeg har en bakgrunn i Hardware og SYSAdmin arbeid i 2 forskjellige selskaper, èn der jeg fikset og vedlikeholdet PCer, laptoper og annet teknisk hardware,  og èn der jeg som SYSAdmin vedlikeholdet og lagde en webstore for butikken, og hjalp med generell IT\n",
+		"title": "Jobb Bakgrunn"
+	},
+	"contact": {
+		"title": "Kontakt meg"
+	},
+	"info": {
+		"close": "Lukk Informasjon",
+		"open": "Åpne for Informasjon"
+	},
+	"recent": {
+		"fill": "Jeg har i de siste ukene jobbet med flere prosjekter, som CV siden og en porteføljeside for en klient, som har gitt meg mye mer kunnskap innen React.",
+		"title": "Nylig Historie"
+	},
+	"welcome": "Velkommen"
+}

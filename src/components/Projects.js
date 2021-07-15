@@ -4,13 +4,12 @@ import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import Style from "../style.css"
 
-
 // eslint-disable-next-line
 import ProjectList from "./ProjectList"
 import ProjectItem from "./ProjectItem"
 
 
-function Projects(props) {
+export default function Projects(props) {
   return (
     <div id="projects">
       <p className="disclaimer">*The project titles are links</p>
@@ -18,5 +17,3 @@ function Projects(props) {
     </div>
   );
 }
-
-export default Projects

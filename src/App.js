@@ -1,14 +1,16 @@
 // eslint-disable-next-line
-import React, { setState, useEffect, } from "react"
+import React, { setState, useEffect, Suspense } from "react"
 // eslint-disable-next-line
 import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 // eslint-disable-next-line
 import Style from "./style.css"
+// eslint-disable-next-line
+import { useTranslation } from "react-i18next";
 
 import Portrait from "./components/Portrait"
-import Links from "./components/Links"
+import Links from "./components/Footer"
 // eslint-disable-next-line
 import About from "./components/About"
 // eslint-disable-next-line
@@ -23,6 +25,7 @@ import Header from "./components/Header"
 export default function App() {
 
   return (
+    <Suspense fallback="loading">
     <div id="appBody">
 
       <Router basename="/cvreact">
@@ -74,5 +77,6 @@ export default function App() {
       </Router>
 
     </div>
+    </Suspense>
   );
 }
