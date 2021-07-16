@@ -10,6 +10,10 @@
 		"close": "Close Information",
 		"open": "Open for Information"
 	},
+	"langpicker": {
+		"close": "Close Menu",
+		"open": "Choose Language"
+	},
 	"recent": {
 		"fill": "In recent weeks, I have worked on several projects, such as the CV page and a portfolio page for a client, which has given me much more knowledge within React.",
 		"title": "Recent History"
