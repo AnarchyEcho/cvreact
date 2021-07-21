@@ -186,7 +186,7 @@ p {
 }
 
 .dark-mode #links #copyright {
-    color: #111111;
+    color: grey;
 }
 
 .dark-mode #header {
