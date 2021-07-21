@@ -10,7 +10,14 @@
 		"close": "Close Information",
 		"open": "Open for Information"
 	},
+<<<<<<< HEAD
 	"langpicker": "Choose Language",
+=======
+	"langpicker": {
+		"close": "Close Menu",
+		"open": "Choose Language"
+	},
+>>>>>>> 927175f7aff2b7eb31d97f637bef586a5fac9104
 	"recent": {
 		"fill": "In recent weeks, I have worked on several projects, such as the CV page and a portfolio page for a client, which has given me much more knowledge within React.",
 		"title": "Recent History"

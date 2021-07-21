@@ -10,7 +10,14 @@
 		"close": "Lukk Informasjon",
 		"open": "Åpne for Informasjon"
 	},
+<<<<<<< HEAD
 	"langpicker": "Velg Språk",
+=======
+	"langpicker": {
+		"close": "Lukk Meny",
+		"open": "Velg Språk"
+	},
+>>>>>>> 927175f7aff2b7eb31d97f637bef586a5fac9104
 	"recent": {
 		"fill": "Jeg har i de siste ukene jobbet med flere prosjekter, som CV siden og en porteføljeside for en klient, som har gitt meg mye mer kunnskap innen React.",
 		"title": "Nylig Historie"
