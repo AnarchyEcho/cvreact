@@ -10,6 +10,7 @@
 		"close": "Lukk Informasjon",
 		"open": "Åpne for Informasjon"
 	},
+	"langpicker": "Velg Språk",
 	"recent": {
 		"fill": "Jeg har i de siste ukene jobbet med flere prosjekter, som CV siden og en porteføljeside for en klient, som har gitt meg mye mer kunnskap innen React.",
 		"title": "Nylig Historie"

@@ -35,7 +35,7 @@ import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 const Header = () => {
   
     //create initial menuCollapse state using useState hook
-    const [menuCollapse, setMenuCollapse] = useState(true)
+    const [menuCollapse, setMenuCollapse] = useState(false)
 
     //create a custom function that will change menucollapse state from false to true and true to false
   const menuIconClick = () => {

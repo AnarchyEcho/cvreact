@@ -181,11 +181,15 @@ p {
     color: black;
 }
 
-.dark-mode #links img{
+.dark-mode #links #github {
     filter: invert(1);
 }
 
-.dark-mode #header{
+.dark-mode #links #copyright {
+    color: #111111;
+}
+
+.dark-mode #header {
     background-color: #FAFAFA;
     color: black;
 }

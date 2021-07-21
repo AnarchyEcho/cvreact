@@ -23,6 +23,7 @@ const norBtn = {
     transform: "scale(0.8)",
     marginTop: "0",
     paddingTop: "0",
+    filter: "none",
   }
 
 const engBtn = {
@@ -32,6 +33,7 @@ const engBtn = {
     transform: "scale(0.8)",
     marginTop: "0",
     paddingTop: "0",
+    filter: "none",
 }
 
 function Links(e) {
@@ -44,7 +46,7 @@ function Links(e) {
       </div>
 
       <div id="languagePicker">
-        <p>Choose Language</p>
+        <p>{t('langpicker')}</p>
         <button id="norwegian" style={norBtn} onClick={() => i18n.changeLanguage('no')}><img src={NorFlag} alt="Norwegian flag" /></button>
         <button id="english" style={engBtn} onClick={() => i18n.changeLanguage('en')}><img src={EngFlag} alt="English flag" /></button>
       </div>
