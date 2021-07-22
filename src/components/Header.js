@@ -36,6 +36,7 @@ const Header = () => {
     //create initial menuCollapse state using useState hook
     const [menuCollapse, setMenuCollapse] = useState(false)
 
+    // function to stop infinite rerendering
     function debounce(func, wait, immediate) {
       var timeout;
     
