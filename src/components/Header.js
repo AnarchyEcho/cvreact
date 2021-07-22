@@ -33,10 +33,43 @@ import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 
 const Header = () => {
-  
     //create initial menuCollapse state using useState hook
     const [menuCollapse, setMenuCollapse] = useState(false)
 
+    function debounce(func, wait, immediate) {
+      var timeout;
+    
+      return function executedFunction() {
+        var context = this;
+        var args = arguments;
+          
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+    
+        var callNow = immediate && !timeout;
+      
+        clearTimeout(timeout);
+    
+        timeout = setTimeout(later, wait);
+      
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+    var returnedFunction = debounce(function() {
+      // The function's code
+      if (window.matchMedia("(max-width: 720px)").matches) {
+        setMenuCollapse(true);
+      } else {
+        setMenuCollapse(false);
+      }
+  }, 1);
+  window.addEventListener('load', returnedFunction);
+  window.addEventListener('resize', returnedFunction);
+  
+    
     //create a custom function that will change menucollapse state from false to true and true to false
   const menuIconClick = () => {
     //condition checking to change state from true to false and vice versa
