@@ -338,6 +338,26 @@ p {
     }
   }
 
+
+/* Scrollbar css */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #12121200;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fe900080;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fe9000;
+}
+
   /* Media queries */
 
 @media screen and (max-width: 500px) {

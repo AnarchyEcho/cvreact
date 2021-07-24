@@ -83,10 +83,10 @@ function openGitPopUp() {
 // this one goes to LinkedIn (currently no profile, change if acquired)
 function openLiPopUp() {
   if (mq.matches) {
-      window.open("https://www.linkedin.com/in/andre-hagen-a0a821217/?locale=no_NO","popPage", "resizable,scrollbars,status");
+      window.open("https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/","popPage", "resizable,scrollbars,status");
   }
   else {
-      window.open("hhttps://www.linkedin.com/in/andre-hagen-a0a821217/?locale=no_NO");
+      window.open("https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/");
 }
 }
 

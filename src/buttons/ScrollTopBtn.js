@@ -42,7 +42,7 @@ function ScrollTopBtn() {
       // console.log(offset);
 
       // css to apply to button if user has or hasn't scrolled far enough
-      if (offset < 150) style = {opacity: 0}
+      if (offset < 250) style = {opacity: 0}
 
     return (
     <>
@@ -50,8 +50,5 @@ function ScrollTopBtn() {
     </>
   );
 }
-
-
-
 
 export default ScrollTopBtn
