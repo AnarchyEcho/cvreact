@@ -43,4 +43,11 @@ export default [
     languages: "React",
     api: "",
     description: "This was my first meeting with ReactJS in real practice and was done in connection with getting used to React and how it works, took a few minutes to understand the setup but after that it went perfectly well, very robust and modular language that works really well to create web pages with."
+}, {
+    id: "7",
+    name: "Countdown Clock",
+    url: "https://github.com/KodeAndre/CountdownTimer",
+    languages: "HTML, CSS and JS",
+    api: "",
+    description: "A challenge i did on Frontend Mentor of intermediate difficulty."
 }, ]
