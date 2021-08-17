@@ -202,6 +202,7 @@ p {
   left: 0;
   height: 100vh;
   width: 220px;
+  z-index: 99999999;
   }
 
   #header .pro-sidebar {
