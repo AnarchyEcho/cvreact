@@ -50,4 +50,12 @@ export default [
     languages: "HTML, CSS and JS",
     api: "",
     description: "A challenge i did on Frontend Mentor of intermediate difficulty."
-}, ]
+}, {
+    id: "8",
+    name: "Visit Southampton",
+    url: "https://kodeandre.github.io/visit_southampton/",
+    languages: "React",
+    api: "Mapbox",
+    description: "What used to be homework over the summer vacation, this project quickly turned into something bigger, using the knowledge i had built up over the past months. (I learned about putting 3d interactive models on websites in this project too but it wasn't for this.)"
+} 
+]
