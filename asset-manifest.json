@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/cvreact/static/css/main.cfdc28c5.chunk.css",
-    "main.js": "/cvreact/static/js/main.8adba4c7.chunk.js",
-    "main.js.map": "/cvreact/static/js/main.8adba4c7.chunk.js.map",
+    "main.css": "/cvreact/static/css/main.82384202.chunk.css",
+    "main.js": "/cvreact/static/js/main.30188073.chunk.js",
+    "main.js.map": "/cvreact/static/js/main.30188073.chunk.js.map",
     "runtime-main.js": "/cvreact/static/js/runtime-main.2e4367eb.js",
     "runtime-main.js.map": "/cvreact/static/js/runtime-main.2e4367eb.js.map",
-    "static/css/2.750176d2.chunk.css": "/cvreact/static/css/2.750176d2.chunk.css",
+    "static/css/2.7d3194d7.chunk.css": "/cvreact/static/css/2.7d3194d7.chunk.css",
     "static/js/2.c282fca0.chunk.js": "/cvreact/static/js/2.c282fca0.chunk.js",
     "static/js/2.c282fca0.chunk.js.map": "/cvreact/static/js/2.c282fca0.chunk.js.map",
     "index.html": "/cvreact/index.html",
-    "static/css/2.750176d2.chunk.css.map": "/cvreact/static/css/2.750176d2.chunk.css.map",
-    "static/css/main.cfdc28c5.chunk.css.map": "/cvreact/static/css/main.cfdc28c5.chunk.css.map",
+    "static/css/2.7d3194d7.chunk.css.map": "/cvreact/static/css/2.7d3194d7.chunk.css.map",
+    "static/css/main.82384202.chunk.css.map": "/cvreact/static/css/main.82384202.chunk.css.map",
     "static/js/2.c282fca0.chunk.js.LICENSE.txt": "/cvreact/static/js/2.c282fca0.chunk.js.LICENSE.txt",
     "static/media/LinkedInLogo.8b89ce01.png": "/cvreact/static/media/LinkedInLogo.8b89ce01.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2e4367eb.js",
-    "static/css/2.750176d2.chunk.css",
+    "static/css/2.7d3194d7.chunk.css",
     "static/js/2.c282fca0.chunk.js",
-    "static/css/main.cfdc28c5.chunk.css",
-    "static/js/main.8adba4c7.chunk.js"
+    "static/css/main.82384202.chunk.css",
+    "static/js/main.30188073.chunk.js"
   ]
 }
