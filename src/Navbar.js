@@ -10,15 +10,15 @@ display: grid;
 grid-auto-flow: column;
 grid-auto-columns: 1fr;
 grid-auto-rows: 1fr;
-grid-template-columns: 2fr 1fr;
+grid-template-columns: 3fr 1fr;
 grid-template-rows: 1fr;
 gap: 0px 0px;
 grid-template-areas:
   "NavWrapperLeft NavWrapperRight";
 width: 100%;
 height: ${props => props.theme.nav.height};
-background-color: orange;
-color: black;
+background-color: ${props => props.theme.nav.backgroundColor};
+color: #fafafa;
 top: 0;
 position: sticky;
 margin-bottom: 100px;
@@ -61,13 +61,14 @@ width: 500px;
 let NavTitle = styled(Link)`
   font-size: ${props => props.theme.title.fontSize};
   text-decoration: none;
-  color: black;
+  color: #fafafa;
+  width: 170px;
 `
 
 let NavLink = styled(Link)`
   font-size: ${props => props.theme.link.fontSize};
   text-decoration: none;
-  color: black;
+  color: #fafafa;
 `
 
 let wrapperTheme =
@@ -75,6 +76,7 @@ let wrapperTheme =
     nav: {
       height:'100px',
       alignItems: 'center',
+      backgroundColor: "none",
     }, 
     title: {
       fontSize: '32px',
@@ -89,6 +91,7 @@ let wrapperThemeScrolled =
     nav: {
       height:'60px',
       alignItems: 'center',
+      backgroundColor: "#fe9000",
     }, 
     title: {
       fontSize: '24px',
