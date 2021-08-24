@@ -9,9 +9,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // eslint-disable-next-line
 import { faGithub as Git, faLinkedin as Li } from "@fortawesome/free-brands-svg-icons";
 
-const FooterWrapper = styled.div`
-    position: fixed;
+const FooterContainer = styled.div`
+    position: absolute;
     bottom: 0;
+    padding-top: 10px;
+    width: 100%;
+`
+
+const FooterWrapper = styled.div`
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -43,17 +48,18 @@ const FooterIcon = styled(FontAwesomeIcon)`
 export default function Footer() {
 
     return (
-        <FooterWrapper>
-
-            <FooterRights>
-                <p>&copy; Copyright 2021 <FooterLink href="https://github.com/kodeandre" target="_blank" rel="noreferrer">Andrè Hagen</FooterLink></p>
-            </FooterRights>
-
-            <FooterSocials>
-                <FooterIcon icon={Git} size="2x" />
-                <FooterIcon icon={Li} size="2x" />
-            </FooterSocials>
-
-        </FooterWrapper>
+        <FooterContainer>
+            <FooterWrapper>
+                <FooterRights>
+                    <p>
+                        &copy; Copyright 2021 <FooterLink href="https://github.com/kodeandre" target="_blank" rel="noreferrer">Andrè Hagen</FooterLink>
+                    </p>
+                </FooterRights>
+                <FooterSocials>
+                    <FooterIcon icon={Git} size="2x" />
+                    <FooterIcon icon={Li} size="2x" />
+                </FooterSocials>
+            </FooterWrapper>
+        </FooterContainer>
     )
 }
