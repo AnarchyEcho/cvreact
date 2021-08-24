@@ -8,7 +8,9 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-rou
 import GlobalStyles from './GlobalStyles.js'
 
 import Navbar from './Navbar'
+import Footer from './Footer'
 import Projects from './Projects'
+import Welcome from './Welcome'
 
 export default function App() {
   return (
@@ -19,9 +21,10 @@ export default function App() {
         <Router basename="cvreact">
         <GlobalStyles />
           <Navbar />
+
           <Switch>
             <Route path="/" exact>
-              <p>3d model inc</p>
+              <Welcome />
             </Route>
           </Switch>
 
@@ -29,6 +32,7 @@ export default function App() {
             <Route exact path="/projects" component={Projects} />
           </Switch>
 
+          <Footer />
         </Router>
 
       </div>
