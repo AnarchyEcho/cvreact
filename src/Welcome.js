@@ -46,7 +46,7 @@ export default function Welcome() {
 
     return (
       <CodeWrapper>
-            <label>The languages i know: </label>
+            <label>Pick a language i know: </label>
             <CodeSelect onChange={handleChange}>
               <option value='jsx'>jsx</option>
               <option value='html'>html</option>
