@@ -10,7 +10,7 @@ display: grid;
 grid-auto-flow: column;
 grid-auto-columns: 1fr;
 grid-auto-rows: 1fr;
-grid-template-columns: 1fr 2fr;
+grid-template-columns: 2fr 1fr;
 grid-template-rows: 1fr;
 gap: 0px 0px;
 grid-template-areas:
@@ -21,7 +21,7 @@ background-color: #BF86D9;
 color: black;
 top: 0;
 position: sticky;
-margin-bottom: 10px;
+margin-bottom: 100px;
 `
 
 let NavWrapperLeft = styled.div`
@@ -30,13 +30,14 @@ display: grid;
 grid-auto-flow: column; 
 grid-auto-columns: 1fr; 
 grid-auto-rows: 1fr; 
-grid-template-columns: 0.7fr 1fr; 
+grid-template-columns: 1fr; 
 grid-template-rows: 1fr; 
 gap: 0px 0px; 
 grid-template-areas: 
-  "NavLogo ."; 
+  "."; 
 height: ${props => props.theme.nav.height};
-align-items: center;
+align-items: ${props => props.theme.nav.alignItems};
+margin-left: 15px;
 `
 
 let NavWrapperRight = styled.div`
@@ -45,26 +46,55 @@ display: grid;
 grid-auto-flow: column; 
 grid-auto-columns: 1fr; 
 grid-auto-rows: 1fr; 
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+grid-template-columns: 1fr 1fr 1fr; 
 grid-template-rows: 1fr; 
 gap: 0px 0px; 
 grid-template-areas: 
-  ". . . . . ."; 
+  ". . ."; 
 height: ${props => props.theme.nav.height};
-align-items: center;
+align-items: ${props => props.theme.nav.alignItems};
+justify-content: flex-end;
 text-align: center;
+width: 500px;
 `
+
+let NavTitle = styled(Link)`
+  font-size: ${props => props.theme.title.fontSize};
+  text-decoration: none;
+  color: black;
+`
+
+let NavLink = styled(Link)`
+  font-size: ${props => props.theme.link.fontSize};
+  text-decoration: none;
+  color: black;
+`
+
 let wrapperTheme =
   {
     nav: {
-      height:'150px',
+      height:'100px',
+      alignItems: 'center',
+    }, 
+    title: {
+      fontSize: '32px',
+    }, 
+    link: {
+      fontSize: '22px',
     }
   }
 
 let wrapperThemeScrolled = 
   {
     nav: {
-      height:'100px',
+      height:'60px',
+      alignItems: 'center',
+    }, 
+    title: {
+      fontSize: '24px',
+    }, 
+    link: {
+      fontSize: '18px',
     }
   }
 
@@ -73,10 +103,10 @@ export default function Navbar() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-        if (window.scrollY > 150 ) {
+        if (window.scrollY > 80 ) {
           setTheme(wrapperThemeScrolled);
         }
-        if (window.scrollY <= 150 ) {
+        if (window.scrollY <= 80 ) {
           setTheme(wrapperTheme);
         }
       });
@@ -86,35 +116,23 @@ export default function Navbar() {
       <ThemeProvider theme={theme}>
         <NavWrapper>
               <NavWrapperLeft>
-                  <h1>
-                      Andrès CV
-                  </h1>
+                  <NavTitle to="/">
+                    Andrès CV
+                  </NavTitle>
               </NavWrapperLeft>
             <NavWrapperRight>
 
-              <h3>
+              <NavLink to="/">
                   Home
-              </h3>
+              </NavLink>
 
-              <h3>
-                  Kalender
-              </h3>
+              <NavLink to="/projects">
+                  Projects
+              </NavLink>
 
-              <h3>
-                  Hva Skjer
-              </h3>
-
-              <h3>
-                  Bli Kjent Med Byen
-              </h3>
-
-              <h3>
-                  Jobb
-              </h3>
-
-              <h3>
-                  Om Oss
-              </h3>
+              <NavLink to="/about">
+                  About
+              </NavLink>
 
           </NavWrapperRight>
         </NavWrapper>
