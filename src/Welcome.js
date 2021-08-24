@@ -19,7 +19,7 @@ const Code = styled(CodeBlock)`
 const CodeSelect = styled.select`
     margin-bottom: 10px;
     position: relative;
-    left: 250px;
+    left: 10px;
     width: 100px;
     height: 50px;
     border-radius: 6px;
@@ -36,18 +36,25 @@ export default function Welcome() {
     const [language, changeLanguage] = useState("jsx");
     // eslint-disable-next-line
     const [lineNumbers, toggleLineNumbers] = useState(false);
+    // eslint-disable-next-line
+    const [lang, setLang] = useState(Codeblock['jsx']);
 
+    function handleChange(e) {
+        setLang(Codeblock[e.target.value]);
+        return changeLanguage(e.target.value);
+    }
 
     return (
       <CodeWrapper>
-            <CodeSelect>
-              <option value="jsx">jsx</option>
-              <option value="html">html</option>
+            <label>The languages i know: </label>
+            <CodeSelect onChange={handleChange}>
+              <option value='jsx'>jsx</option>
+              <option value='html'>html</option>
             </CodeSelect>
 
             <Code
                 language={language}
-                text={Codeblock.jsx}
+                text={lang}
                 showLineNumbers={lineNumbers}
                 theme={dracula}
                 wrapLines={true}
