@@ -31,18 +31,19 @@ const FooterWrapper = styled.div`
 const FooterRights = styled.div`
     grid-area: FooterRights;
     margin-left: 20px;
+    align-self: center;
 `
 const FooterSocials = styled.div`
     grid-area: FooterSocials;
     place-self: flex-end;
     margin-right: 20px;
+    align-self: center;
 `
 const FooterLink = styled.a`
   color: #fafafa;
 `
 const FooterIcon = styled(FontAwesomeIcon)`
     margin-left: 5px;
-    margin-bottom: 10px;
 `
 
 export default function Footer() {
@@ -56,8 +57,8 @@ export default function Footer() {
                     </p>
                 </FooterRights>
                 <FooterSocials>
-                    <FooterIcon icon={Git} size="2x" />
-                    <FooterIcon icon={Li} size="2x" />
+                    <FooterLink href="https://github.com/KodeAndre" target="_blank" rel="noreferrer"><FooterIcon icon={Git} size="2x" /></FooterLink>
+                    <FooterLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer"><FooterIcon icon={Li} size="2x" /></FooterLink>
                 </FooterSocials>
             </FooterWrapper>
         </FooterContainer>

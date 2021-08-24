@@ -10,7 +10,7 @@ export default createGlobalStyle`
 
     body{
         position: relative;
-        min-height: 100vh;
+        min-height: 99vh;
         background-color: #202020;
         color: #fafafa;
         margin: 0;
