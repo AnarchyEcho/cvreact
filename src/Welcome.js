@@ -20,11 +20,11 @@ const CodeSelect = styled.select`
     margin-bottom: 10px;
     position: relative;
     left: 10px;
-    width: 100px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
     border-radius: 6px;
     -webkit-appearance: none;
-    padding-left: 30px;
+    padding-left: 15px;
     font-family: inherit;
     &:focus{
         outline: none;
@@ -46,6 +46,7 @@ export default function Welcome() {
 
     return (
       <CodeWrapper>
+
             <label>Pick a language i know: </label>
             <CodeSelect onChange={handleChange}>
               <option value='jsx'>jsx</option>
