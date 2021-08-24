@@ -17,7 +17,7 @@ grid-template-areas:
   "NavWrapperLeft NavWrapperRight";
 width: 100%;
 height: ${props => props.theme.nav.height};
-background-color: #BF86D9;
+background-color: orange;
 color: black;
 top: 0;
 position: sticky;

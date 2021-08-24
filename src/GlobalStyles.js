@@ -14,13 +14,4 @@ export default createGlobalStyle`
         padding: 0;
         font-size: 16px;
     }
-
-    hr {
-        width: 15rem;
-        height: 2px;
-        border-top: solid black 2px;
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
-    }
 `
