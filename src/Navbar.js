@@ -5,8 +5,6 @@ import ReactDOM from 'react-dom'
 // eslint-disable-next-line
 import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 
-import logo from './media/MAB.png'
-
 let NavWrapper = styled.div`
 display: grid;
 grid-auto-flow: column;
@@ -41,14 +39,6 @@ height: ${props => props.theme.nav.height};
 align-items: center;
 `
 
-const NavLogo = styled.img`
-grid-area: NavLogo;
-width: ${props => props.theme.nav.width};
-height: ${props => props.theme.image.height};
-justify-self: center; 
-align-self: center;
-`
-
 let NavWrapperRight = styled.div`
 grid-area: NavWrapperRight;
 display: grid; 
@@ -64,25 +54,17 @@ height: ${props => props.theme.nav.height};
 align-items: center;
 text-align: center;
 `
-    let wrapperTheme =
-    {
-      nav: {
-        height:'150px',
-      },
-      image: {
-        height: '125px',
-        width: '250px',
-      }
+let wrapperTheme =
+  {
+    nav: {
+      height:'150px',
     }
+  }
 
-  let wrapperThemeScrolled = 
+let wrapperThemeScrolled = 
   {
     nav: {
       height:'100px',
-    },
-    image: {
-      height: '75px',
-      width: '150px',
     }
   }
 
@@ -104,30 +86,36 @@ export default function Navbar() {
       <ThemeProvider theme={theme}>
         <NavWrapper>
               <NavWrapperLeft>
-                  <NavLogo src={logo} alt="Logo of MoveArt Bergen"></NavLogo>
                   <h1>
-                      MoveArt Bergen
+                      Andrès CV
                   </h1>
               </NavWrapperLeft>
             <NavWrapperRight>
+
               <h3>
-                  Arkiv
+                  Home
               </h3>
+
               <h3>
                   Kalender
               </h3>
+
               <h3>
                   Hva Skjer
               </h3>
+
               <h3>
                   Bli Kjent Med Byen
               </h3>
+
               <h3>
                   Jobb
               </h3>
+
               <h3>
                   Om Oss
               </h3>
+
           </NavWrapperRight>
         </NavWrapper>
       </ThemeProvider>
