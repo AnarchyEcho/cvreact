@@ -4,6 +4,10 @@ import React from 'react';
 import styled, { ThemeProvider} from 'styled-components';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
+// eslint-disable-next-line
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// eslint-disable-next-line
+import { faGithub as Git, faLinkedin as Li } from "@fortawesome/free-brands-svg-icons";
 
 const FooterWrapper = styled.div`
     position: fixed;
@@ -28,9 +32,12 @@ const FooterSocials = styled.div`
     place-self: flex-end;
     margin-right: 20px;
 `
-
-let FooterLink = styled.a`
+const FooterLink = styled.a`
   color: #fafafa;
+`
+const FooterIcon = styled(FontAwesomeIcon)`
+    margin-left: 5px;
+    margin-bottom: 10px;
 `
 
 export default function Footer() {
@@ -43,7 +50,8 @@ export default function Footer() {
             </FooterRights>
 
             <FooterSocials>
-                <p>socials</p>
+                <FooterIcon icon={Git} size="2x" />
+                <FooterIcon icon={Li} size="2x" />
             </FooterSocials>
 
         </FooterWrapper>
