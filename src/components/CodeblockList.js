@@ -26,5 +26,13 @@ export default {
           <p>Welcome to my CV/Portfolio!</p>
         </div>
       </body>
-    </html>`
+    </html>`,
+    python: `f = open("who.txt", "r")
+    print(f.read())
+    expected output: "Hi, i'm Andrè.",
+    "I'm a 23 years old Software Developer",
+    "Welcome to my CV/Portfolio!")`,
+    lua: `print("Hi, i'm Andrè.
+    I'm a 23 years old Software Developer
+    Welcome to my CV/Portfolio!")`
 }

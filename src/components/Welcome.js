@@ -25,7 +25,7 @@ const CodeSelect = styled.select`
     margin-bottom: 10px;
     position: relative;
     left: 10px;
-    width: 60px;
+    width: 80px;
     height: 40px;
     border-radius: 6px;
     -webkit-appearance: none;
@@ -61,6 +61,8 @@ export default function Welcome() {
             <CodeSelect id="codelang" onChange={handleChange}>
                 <option value='jsx'>jsx</option>
                 <option value='html'>html</option>
+                <option value='python'>python</option>
+                <option value='lua'>lua</option>
             </CodeSelect>
             <Code
                 language={language}
