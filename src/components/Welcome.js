@@ -4,7 +4,8 @@ import React, { useState, useEffect } from 'react';
 import styled, { ThemeProvider} from 'styled-components';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
-import { CodeBlock, dracula } from "react-code-blocks";
+// eslint-disable-next-line
+import { CodeBlock, monokai } from "react-code-blocks";
 import Codeblock from './CodeblockList'
 
 const CodeWrapper = styled.div`
@@ -64,11 +65,12 @@ export default function Welcome() {
                 <option value='python'>python</option>
                 <option value='lua'>lua</option>
             </CodeSelect>
+
             <Code
                 language={language}
                 text={lang}
                 showLineNumbers={lineNumbers}
-                theme={dracula}
+                theme={monokai}
                 wrapLines={true}
                 codeBlock
             />
