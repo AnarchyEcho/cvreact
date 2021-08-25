@@ -18,6 +18,10 @@ import About from './components/About'
 const ContentWrapper = styled.div`
   margin-left: 20px;
   margin-right: 20px;
+  @media (max-width:769px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 `
 
 export default function App() {

@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom'
 // eslint-disable-next-line
 import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 
+import Hamburger from './Hamburger'
+
 let NavWrapper = styled.div`
 display: grid;
 grid-auto-flow: column;
@@ -22,6 +24,12 @@ color: #fafafa;
 top: 0;
 position: sticky;
 margin-bottom: 60px;
+@media (max-width:769px) {
+  grid-template-areas:
+    "NavWrapperLeft Hamburger";
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}
 `
 let NavWrapperLeft = styled.div`
 grid-area: NavWrapperLeft;
@@ -39,6 +47,7 @@ align-items: ${props => props.theme.nav.alignItems};
 margin-left: 15px;
 `
 let NavWrapperRight = styled.div`
+@media (min-width:768px) {
 grid-area: NavWrapperRight;
 display: grid; 
 grid-auto-flow: column; 
@@ -54,6 +63,7 @@ align-items: ${props => props.theme.nav.alignItems};
 justify-content: flex-end;
 text-align: center;
 width: 500px;
+}
 `
 let NavTitle = styled(Link)`
   font-size: ${props => props.theme.title.fontSize};
@@ -91,6 +101,9 @@ let NavLink = styled(Link)`
    50%  { -webkit-transform: scale(0.75); opacity: 0.45; }
    100% { -webkit-transform: scale(1)   ; opacity: 1;    }
 }
+`
+const Hamb = styled(Hamburger)`
+  grid-area: Hamburger;
 `
 let wrapperTheme =
   {
@@ -139,8 +152,8 @@ export default function Navbar() {
       });
     }, []);
 
-    return (
-      <ThemeProvider theme={theme}>
+    const desktop = 
+    <ThemeProvider theme={theme}>
         <NavWrapper>
               <NavWrapperLeft>
                   <NavTitle to="/">
@@ -164,5 +177,26 @@ export default function Navbar() {
           </NavWrapperRight>
         </NavWrapper>
       </ThemeProvider>
-    )
+
+const phone = 
+<ThemeProvider theme={theme}>
+    <NavWrapper>
+          <NavWrapperLeft>
+              <NavTitle to="/">
+                Andrès CV
+              </NavTitle>
+          </NavWrapperLeft>
+        <NavWrapperRight>
+
+          <Hamb />
+
+      </NavWrapperRight>
+    </NavWrapper>
+  </ThemeProvider>
+
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        return desktop;
+      } else {
+        return phone;
+      }
   };

@@ -22,6 +22,13 @@ const CodeWrapper = styled.div`
     from { right: -1000px; }
     to   { right: 0; }
 }
+@media (max-width:769px) {
+    width: 365px;
+    margin-right: 0;
+    margin-left: 8px;
+    position: relative;
+    z-index: 1;
+}
 `
 const Code = styled(CodeBlock)`
 

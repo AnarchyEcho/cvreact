@@ -6,6 +6,7 @@ import styled, { ThemeProvider} from 'styled-components';
 import ReactDOM from 'react-dom'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 
+
 const LiveEdit = styled(LiveEditor)`
     width: auto;
     border-left: 4px solid #D1949E;
@@ -28,6 +29,9 @@ const LiveWrapper = styled.div`
     @keyframes fadeinLeft {
     from { left: -1000px; }
     to   { left: 0; }
+    }
+    @media (max-width:769px) {
+        display: none;
     }
 `
 
