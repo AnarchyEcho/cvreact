@@ -31,6 +31,7 @@ const FooterRights = styled.div`
     grid-area: FooterRights;
     margin-left: 20px;
     align-self: center;
+    color: #fafafa60;
 `
 const FooterSocials = styled.div`
     grid-area: FooterSocials;
@@ -39,9 +40,10 @@ const FooterSocials = styled.div`
     align-self: center;
 `
 const FooterLink = styled.a`
-  color: #fafafa;
+  color: #fafafa60;
 `
 const FooterIcon = styled(FontAwesomeIcon)`
+    color: #fafafa;
     margin-left: 5px;
     &:hover {
         filter: invert(50%) sepia(48%) saturate(1537%) hue-rotate(2deg) brightness(108%) contrast(107%);
