@@ -45,14 +45,18 @@ export default function Welcome() {
     }
 
     return (
-      <CodeWrapper>
+      <div>
 
+        <div>
+            <p>model</p>
+        </div>
+
+        <CodeWrapper>
             <label>Pick a language i know: </label>
             <CodeSelect onChange={handleChange}>
-              <option value='jsx'>jsx</option>
-              <option value='html'>html</option>
+                <option value='jsx'>jsx</option>
+                <option value='html'>html</option>
             </CodeSelect>
-
             <Code
                 language={language}
                 text={lang}
@@ -61,7 +65,8 @@ export default function Welcome() {
                 wrapLines={true}
                 codeBlock
             />
-          
-      </CodeWrapper>
+        
+        </CodeWrapper>
+      </div>
     );
   };

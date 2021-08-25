@@ -1,6 +1,9 @@
 // eslint-disable-next-line
 export default {
-    jsx: `function MyName() {
+    jsx: `import React from 'react';
+    import styled from 'styled-components';
+    import Norwegian from 'Country'
+    function MyName() {
         return (
           <div id="Coder">
             <h1>Hi, i'm Andrè</h1>
@@ -11,7 +14,7 @@ export default {
       }
       export default MyName`,
     html: `<!DOCTYPE html>
-    <html lang="en">
+    <html lang="nb">
       <head>
         <meta charset="utf-8" />
         <title>Andrè's CV</title>

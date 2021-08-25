@@ -7,12 +7,13 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-rou
 // eslint-disable-next-line
 import GlobalStyles from './GlobalStyles.js'
 
-import Navbar from './Navbar'
-import Footer from './Footer'
-import Projects from './Projects'
-import Welcome from './Welcome'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Projects from './components/Projects'
+import Welcome from './components/Welcome'
 
 export default function App() {
+
   return (
     <Suspense fallback="loading">
 
