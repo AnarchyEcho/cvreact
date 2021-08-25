@@ -12,6 +12,11 @@ const CodeWrapper = styled.div`
     position: absolute;
     right: 0;
     margin-right: 50px;
+    animation: fadein 1.2s;
+    @keyframes fadein {
+    from { translateX: 4050; }
+    to   { translateX: 0; }
+}
 `
 const Code = styled(CodeBlock)`
 

@@ -63,12 +63,28 @@ let NavTitle = styled(Link)`
   text-decoration: none;
   color: #fafafa;
   width: 170px;
+  &:hover {
+  animation: pulse 1s infinite
+  }
+  @keyframes pulse {
+   0%   { -webkit-transform: scale(1)   ; opacity: 1;    }
+   50%  { -webkit-transform: scale(0.75); opacity: 0.25; }
+   100% { -webkit-transform: scale(1)   ; opacity: 1;    }
+}
 `
 
 let NavLink = styled(Link)`
   font-size: ${props => props.theme.link.fontSize};
   text-decoration: none;
   color: #fafafa;
+  &:hover {
+  animation: pulse 1s infinite
+  }
+  @keyframes pulse {
+   0%   { -webkit-transform: scale(1)   ; opacity: 1;    }
+   50%  { -webkit-transform: scale(0.75); opacity: 0.25; }
+   100% { -webkit-transform: scale(1)   ; opacity: 1;    }
+}
 `
 
 let wrapperTheme =
