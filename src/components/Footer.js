@@ -35,6 +35,15 @@ const FooterRights = styled.div`
 `
 const FooterSocials = styled.div`
     grid-area: FooterSocials;
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "Email Icons"; 
     place-self: flex-end;
     margin-right: 20px;
     align-self: center;
@@ -61,8 +70,8 @@ export default function Footer() {
                     </p>
                 </FooterRights>
                 <FooterSocials>
-                    <FooterLink href="https://github.com/KodeAndre" target="_blank" rel="noreferrer"><FooterIcon icon={Git} size="2x" /></FooterLink>
-                    <FooterLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer"><FooterIcon icon={Li} size="2x" /></FooterLink>
+                        <FooterLink href="https://github.com/KodeAndre" target="_blank" rel="noreferrer"><FooterIcon icon={Git} size="2x" /></FooterLink>
+                        <FooterLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer"><FooterIcon icon={Li} size="2x" /></FooterLink>
                 </FooterSocials>
             </FooterWrapper>
         </FooterContainer>

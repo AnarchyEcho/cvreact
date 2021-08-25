@@ -58,7 +58,6 @@ width: 500px;
 let NavTitle = styled(Link)`
   font-size: ${props => props.theme.title.fontSize};
   text-decoration: none;
-  color: #000;
   width: 170px;
   background-color: #fafafa;
   background-clip: text;
@@ -66,7 +65,6 @@ let NavTitle = styled(Link)`
   color: transparent;
   animation: hue 7s infinite;
   &:hover {
-  color: #fe9000;
 	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
 	-webkit-text-fill-color: transparent;
 }

@@ -12,13 +12,13 @@ import codetheme from "./CodeTheme"
 import LiveCode from './LiveCode'
 
 const CodeWrapper = styled.div`
-    width: 600px;
+    width: 450px;
     position: absolute;
     top: 30%;
     right: 0;
-    margin-right: 50px;
-    animation: fadein 1.2s;
-    @keyframes fadein {
+    margin-right: 20px;
+    animation: fadeinRight 1.2s;
+    @keyframes fadeinRight {
     from { right: -1000px; }
     to   { right: 0; }
 }

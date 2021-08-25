@@ -48,7 +48,8 @@ export default function App() {
             </Switch>
           </ContentWrapper>
 
-          <Footer />
+            <Footer />
+
         </Router>
 
       </div>
