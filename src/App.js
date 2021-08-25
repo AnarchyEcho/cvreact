@@ -6,11 +6,18 @@ import ReactDOM from "react-dom"
 import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 // eslint-disable-next-line
 import GlobalStyles from './GlobalStyles.js'
+// eslint-disable-next-line
+import styled from 'styled-components';
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
 import Welcome from './components/Welcome'
+import About from './components/About'
+
+const ContentWrapper = styled.div`
+  margin-left: 20px;
+`
 
 export default function App() {
 
@@ -23,15 +30,22 @@ export default function App() {
         <GlobalStyles />
           <Navbar />
 
-          <Switch>
-            <Route path="/" exact>
-              <Welcome />
-            </Route>
-          </Switch>
-
-          <Switch path="/projects">
-            <Route exact path="/projects" component={Projects} />
-          </Switch>
+          <ContentWrapper>
+  
+            <Switch>
+              <Route path="/" exact>
+                <Welcome />
+              </Route>
+            </Switch>
+  
+            <Switch path="/projects">
+              <Route exact path="/projects" component={Projects} />
+            </Switch>
+  
+            <Switch path="/about">
+              <Route exact path="/about" component={About} />
+            </Switch>
+          </ContentWrapper>
 
           <Footer />
         </Router>

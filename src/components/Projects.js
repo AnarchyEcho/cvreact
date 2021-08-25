@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom'
 
 const List = styled.li`
     list-style: none;
+    margin-left: -40px;
+    padding: 0;
 `
 
 export default function Projects() {
