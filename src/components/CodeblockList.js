@@ -3,7 +3,7 @@ export default {
     jsx: `import React from 'react';
     import styled from 'styled-components';
     import Norway from './Country'
-    function WhoAmI() {
+    export default function WhoAmI() {
         return (
           <div id="Coder">
             <h1>Hi, i'm Andrè</h1>
@@ -11,8 +11,7 @@ export default {
             <p>Welcome to my CV/Portfolio!</p>
           </div>
         );
-      }
-      export default WhoAmI`,
+      }`,
     html: `<!DOCTYPE html>
     <html lang="nb">
       <head>
