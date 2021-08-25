@@ -56,7 +56,7 @@ export default function Projects() {
             {items.map(item => (
               <List key={item.id} style={{lineHeight: "20px"}}>
                 <ListSubTitle>{item.name}</ListSubTitle>
-                <p><ListSpan>Description</ListSpan>: {item.description}</p>
+                <p>Description: {item.description}</p>
                 <p><ListSpan>Link</ListSpan>: <a href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>{item.html_url}</a></p> <br/>
               </List>
             ))}
