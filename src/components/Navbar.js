@@ -24,6 +24,7 @@ color: #fafafa;
 top: 0;
 position: sticky;
 margin-bottom: 60px;
+z-index: 1;
 @media (max-width:769px) {
   grid-template-areas:
     "NavWrapperLeft Hamburger";

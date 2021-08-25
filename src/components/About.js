@@ -9,7 +9,7 @@ const AboutTitles = styled.h3`
     color: #fe9000;
 `
 const AboutLink = styled.a`
-  color: #fafafa;
+    color: #fafafa;
 `
 
 export default function About() {

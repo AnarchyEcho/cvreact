@@ -12,14 +12,15 @@ const HamburgerWrapper = styled.div`
 const HamLinkWrapper = styled.div`
     top: ${props => props.theme.links.top};
     position: absolute;
+    text-align: center;
     left: 0;
     right: 0;
-    text-align: center;
+    bottom: 0;
     justify-self: center;
     display: grid;
-    z-index: ${props => props.theme.links.zIndex};
     background-color: #252525;
     transition: top 0.5s ease-in-out;
+    height: 300px;
 `
 const HamLinkTitle = styled.h2`
     padding-top: 10px;
@@ -35,13 +36,11 @@ const HamIcon = styled(FontAwesomeIcon)`
 const HamTheme = {
     links: {
         top: "-400px",
-        zIndex: "-1"
     }
 }
 const HamThemeToggled = {
     links: {
         top: "100px",
-        zIndex: "99"
     }
 }
 

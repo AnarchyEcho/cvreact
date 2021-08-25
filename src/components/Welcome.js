@@ -13,7 +13,7 @@ import LiveCode from './LiveCode'
 
 const CodeWrapper = styled.div`
     width: 450px;
-    position: absolute;
+    position: fixed;
     top: 30%;
     right: 0;
     margin-right: 20px;
@@ -27,14 +27,15 @@ const CodeWrapper = styled.div`
     margin-right: 0;
     margin-left: 8px;
     position: relative;
-    z-index: 1;
 }
 `
+const WelcomeWrapper = styled.div`
+`
 const Code = styled(CodeBlock)`
-
+    z-index: -1;
 `
 const CodeSelect = styled.select`
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     position: relative;
     left: 10px;
     width: 80px;
@@ -62,19 +63,10 @@ export default function Welcome() {
     }
 
     return (
-      <div>
+      <WelcomeWrapper>
 
         <LiveCode />
-
-        <CodeWrapper>
-            <label htmlFor="codelang">Pick a language: </label>
-            <CodeSelect id="codelang" onChange={handleChange}>
-                <option value='jsx'>jsx</option>
-                <option value='html'>html</option>
-                <option value='python'>python</option>
-                <option value='lua'>lua</option>
-            </CodeSelect>
-
+            <CodeWrapper>
             <Code
                 language={language}
                 text={lang}
@@ -83,8 +75,16 @@ export default function Welcome() {
                 wrapLines={true}
                 codeBlock
             />
-        
+
+                
+            <label htmlFor="codelang">Pick a language: </label>
+            <CodeSelect id="codelang" onChange={handleChange}>
+                <option value='jsx'>jsx</option>
+                <option value='html'>html</option>
+                <option value='python'>python</option>
+                <option value='lua'>lua</option>
+            </CodeSelect>
         </CodeWrapper>
-      </div>
+      </WelcomeWrapper>
     );
   };
