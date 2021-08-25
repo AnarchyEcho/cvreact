@@ -2,7 +2,7 @@
 export default {
     jsx: `import React from 'react';
     import styled from 'styled-components';
-    import Norway from 'Country'
+    import Norway from './Country'
     function WhoAmI() {
         return (
           <div id="Coder">
