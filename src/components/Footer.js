@@ -44,6 +44,9 @@ const FooterLink = styled.a`
 `
 const FooterIcon = styled(FontAwesomeIcon)`
     margin-left: 5px;
+    &:hover {
+        filter: invert(50%) sepia(48%) saturate(1537%) hue-rotate(2deg) brightness(108%) contrast(107%);
+    }
 `
 
 export default function Footer() {

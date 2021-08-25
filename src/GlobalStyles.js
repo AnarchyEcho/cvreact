@@ -6,6 +6,7 @@ export default createGlobalStyle`
         max-width: 100%;
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
     }
 
     body{

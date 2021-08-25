@@ -14,8 +14,8 @@ const CodeWrapper = styled.div`
     margin-right: 50px;
     animation: fadein 1.2s;
     @keyframes fadein {
-    from { translateX: 4050; }
-    to   { translateX: 0; }
+    from { right: -1000px; }
+    to   { right: 0; }
 }
 `
 const Code = styled(CodeBlock)`
@@ -57,8 +57,8 @@ export default function Welcome() {
         </div>
 
         <CodeWrapper>
-            <label>Pick a language i know: </label>
-            <CodeSelect onChange={handleChange}>
+            <label for="codelang">Pick a language: </label>
+            <CodeSelect id="codelang" onChange={handleChange}>
                 <option value='jsx'>jsx</option>
                 <option value='html'>html</option>
             </CodeSelect>

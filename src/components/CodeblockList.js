@@ -2,8 +2,8 @@
 export default {
     jsx: `import React from 'react';
     import styled from 'styled-components';
-    import Norwegian from 'Country'
-    function MyName() {
+    import Norway from 'Country'
+    function WhoAmI() {
         return (
           <div id="Coder">
             <h1>Hi, i'm Andrè</h1>
@@ -12,7 +12,7 @@ export default {
           </div>
         );
       }
-      export default MyName`,
+      export default WhoAmI`,
     html: `<!DOCTYPE html>
     <html lang="nb">
       <head>

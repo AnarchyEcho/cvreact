@@ -61,15 +61,26 @@ width: 500px;
 let NavTitle = styled(Link)`
   font-size: ${props => props.theme.title.fontSize};
   text-decoration: none;
-  color: #fafafa;
+  color: #000;
   width: 170px;
+  background-color: #fafafa;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: hue 7s infinite;
   &:hover {
-  animation: pulse 1s infinite
+  color: #fe9000;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
   }
-  @keyframes pulse {
-   0%   { -webkit-transform: scale(1)   ; opacity: 1;    }
-   50%  { -webkit-transform: scale(0.75); opacity: 0.25; }
-   100% { -webkit-transform: scale(1)   ; opacity: 1;    }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
 `
 
@@ -77,12 +88,13 @@ let NavLink = styled(Link)`
   font-size: ${props => props.theme.link.fontSize};
   text-decoration: none;
   color: #fafafa;
+  padding: ${props => props.theme.link.padding};
   &:hover {
   animation: pulse 1s infinite
   }
   @keyframes pulse {
    0%   { -webkit-transform: scale(1)   ; opacity: 1;    }
-   50%  { -webkit-transform: scale(0.75); opacity: 0.25; }
+   50%  { -webkit-transform: scale(0.75); opacity: 0.45; }
    100% { -webkit-transform: scale(1)   ; opacity: 1;    }
 }
 `
@@ -99,6 +111,7 @@ let wrapperTheme =
     }, 
     link: {
       fontSize: '22px',
+      padding: "30px 0",
     }
   }
 
@@ -111,9 +124,11 @@ let wrapperThemeScrolled =
     }, 
     title: {
       fontSize: '24px',
-    }, 
+      backgroundColor: '#fafafa',
+    },
     link: {
       fontSize: '18px',
+      padding: "19px 0",
     }
   }
 
