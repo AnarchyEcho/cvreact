@@ -11,6 +11,7 @@ import Codeblock from './CodeblockList'
 const CodeWrapper = styled.div`
     width: 600px;
     position: absolute;
+    top: 30%;
     right: 0;
     margin-right: 50px;
     animation: fadein 1.2s;
@@ -52,10 +53,6 @@ export default function Welcome() {
 
     return (
       <div>
-
-        <div>
-            <p>model or prices</p>
-        </div>
 
         <CodeWrapper>
             <label for="codelang">Pick a language: </label>

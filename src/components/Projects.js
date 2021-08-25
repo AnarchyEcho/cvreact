@@ -11,6 +11,13 @@ const List = styled.li`
     padding: 0;
 `
 
+const ListSubTitle = styled.h3`
+  color: #fe9000;
+`
+const ListSpan = styled.span`
+  color: #fe9000;
+`
+
 export default function Projects() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -48,9 +55,9 @@ export default function Projects() {
           <ul>
             {items.map(item => (
               <List key={item.id} style={{lineHeight: "20px"}}>
-                <h3>Name: {item.name}</h3>
-                <p>Description: {item.description}</p>
-                <p>Link: <a href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>{item.html_url}</a></p> <br/>
+                <ListSubTitle>{item.name}</ListSubTitle>
+                <p><ListSpan>Description</ListSpan>: {item.description}</p>
+                <p><ListSpan>Link</ListSpan>: <a href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>{item.html_url}</a></p> <br/>
               </List>
             ))}
           </ul>

@@ -21,7 +21,7 @@ background-color: ${props => props.theme.nav.backgroundColor};
 color: #fafafa;
 top: 0;
 position: sticky;
-margin-bottom: 75px;
+margin-bottom: 60px;
 `
 
 let NavWrapperLeft = styled.div`
