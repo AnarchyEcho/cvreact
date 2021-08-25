@@ -102,6 +102,7 @@ let wrapperThemeScrolled =
   }
 
 export default function Navbar() {
+
   let [theme, setTheme] = useState(wrapperTheme);
 
     useEffect(() => {

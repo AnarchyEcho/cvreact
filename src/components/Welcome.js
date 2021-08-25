@@ -48,7 +48,7 @@ export default function Welcome() {
       <div>
 
         <div>
-            <p>model</p>
+            <p>model or prices</p>
         </div>
 
         <CodeWrapper>
