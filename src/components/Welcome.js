@@ -5,8 +5,9 @@ import styled, { ThemeProvider} from 'styled-components';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
-import { CodeBlock, monokai } from "react-code-blocks";
+import { CodeBlock } from "react-code-blocks";
 import Codeblock from './CodeblockList'
+import codetheme from "./CodeTheme"
 
 const CodeWrapper = styled.div`
     width: 600px;
@@ -67,7 +68,7 @@ export default function Welcome() {
                 language={language}
                 text={lang}
                 showLineNumbers={lineNumbers}
-                theme={monokai}
+                theme={codetheme}
                 wrapLines={true}
                 codeBlock
             />
