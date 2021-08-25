@@ -17,6 +17,7 @@ import About from './components/About'
 
 const ContentWrapper = styled.div`
   margin-left: 20px;
+  margin-right: 20px;
 `
 
 export default function App() {

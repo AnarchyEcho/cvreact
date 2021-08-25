@@ -55,7 +55,7 @@ export default function Welcome() {
       <div>
 
         <CodeWrapper>
-            <label for="codelang">Pick a language: </label>
+            <label htmlFor="codelang">Pick a language: </label>
             <CodeSelect id="codelang" onChange={handleChange}>
                 <option value='jsx'>jsx</option>
                 <option value='html'>html</option>

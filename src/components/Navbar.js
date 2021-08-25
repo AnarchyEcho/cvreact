@@ -23,7 +23,6 @@ top: 0;
 position: sticky;
 margin-bottom: 60px;
 `
-
 let NavWrapperLeft = styled.div`
 grid-area: NavWrapperLeft;
 display: grid; 
@@ -39,7 +38,6 @@ height: ${props => props.theme.nav.height};
 align-items: ${props => props.theme.nav.alignItems};
 margin-left: 15px;
 `
-
 let NavWrapperRight = styled.div`
 grid-area: NavWrapperRight;
 display: grid; 
@@ -57,7 +55,6 @@ justify-content: flex-end;
 text-align: center;
 width: 500px;
 `
-
 let NavTitle = styled(Link)`
   font-size: ${props => props.theme.title.fontSize};
   text-decoration: none;
@@ -83,7 +80,6 @@ let NavTitle = styled(Link)`
   }
 }
 `
-
 let NavLink = styled(Link)`
   font-size: ${props => props.theme.link.fontSize};
   text-decoration: none;
@@ -98,7 +94,6 @@ let NavLink = styled(Link)`
    100% { -webkit-transform: scale(1)   ; opacity: 1;    }
 }
 `
-
 let wrapperTheme =
   {
     nav: {
@@ -114,7 +109,6 @@ let wrapperTheme =
       padding: "30px 0",
     }
   }
-
 let wrapperThemeScrolled = 
   {
     nav: {

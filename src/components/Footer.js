@@ -15,7 +15,6 @@ const FooterContainer = styled.div`
     padding-top: 10px;
     width: 100%;
 `
-
 const FooterWrapper = styled.div`
     display: grid;
     grid-auto-flow: column;
