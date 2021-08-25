@@ -9,6 +9,8 @@ import { CodeBlock } from "react-code-blocks";
 import Codeblock from './CodeblockList'
 import codetheme from "./CodeTheme"
 
+import LiveCode from './LiveCode'
+
 const CodeWrapper = styled.div`
     width: 600px;
     position: absolute;
@@ -54,6 +56,8 @@ export default function Welcome() {
 
     return (
       <div>
+
+        <LiveCode />
 
         <CodeWrapper>
             <label htmlFor="codelang">Pick a language: </label>

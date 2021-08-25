@@ -2,7 +2,7 @@
 export default {
     lineNumberColor: `#ddd`,
     lineNumberBgColor: `#272822`,
-    backgroundColor: `#1E1E1E`,
+    backgroundColor: `#171717`,
     textColor: `#ddd`,
     substringColor: `#a6e22e`,
     keywordColor: `#C586C0`,
