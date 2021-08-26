@@ -9,13 +9,28 @@ const List = styled.li`
     list-style: none;
     margin-left: -40px;
     padding: 0;
+    white-space: break-spaces;
 `
+const ListWrapper = styled.div`
 
+`
+const UnoList = styled.ul`
+  display: grid;
+  @media (min-width: 768px) {
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+  @media (max-width: 768px) {
+  grid-template-columns: repeat(1fr);
+  }
+`
 const ListSubTitle = styled.h3`
   color: #fe9000;
 `
 const ListSpan = styled.span`
   color: #fe9000;
+`
+const ListLink = styled.a`
+  word-break: break-word;
 `
 
 export default function Projects() {
@@ -33,7 +48,6 @@ export default function Projects() {
           (result) => {
             setIsLoaded(true);
             setItems(result);
-            console.log(result)
           },
           // Note: it's important to handle errors here
           // instead of a catch() block so that we don't swallow
@@ -53,15 +67,17 @@ export default function Projects() {
     return (
       <div>
           <h2>&gt;Projects</h2>
-          <ul>
-            {items.map(item => (
-              <List key={item.id} style={{lineHeight: "20px"}}>
-                <ListSubTitle>{item.name}</ListSubTitle>
-                <p>Description: {item.description}</p>
-                <p><ListSpan>Link</ListSpan>: <a href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>{item.html_url}</a></p> <br/>
-              </List>
-            ))}
-          </ul>
+          <ListWrapper>
+            <UnoList>
+              {items.map(item => (
+                <List key={item.id} style={{lineHeight: "20px"}}>
+                  <ListSubTitle>{item.name}</ListSubTitle>
+                  <p>Description: {item.description}</p>
+                  <p><ListSpan>Link</ListSpan><br/><ListLink href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>{item.html_url}</ListLink></p> <br/>
+                </List>
+              ))}
+            </UnoList>
+          </ListWrapper>
           
       </div>
     );
