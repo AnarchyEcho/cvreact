@@ -5,78 +5,59 @@ import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 // eslint-disable-next-line
-import Style from "./style.css"
+import GlobalStyles from './GlobalStyles.js'
 // eslint-disable-next-line
-import { useTranslation } from "react-i18next";
+import styled from 'styled-components';
 
-import Portrait from "./components/Portrait"
-import Links from "./components/Footer"
-// eslint-disable-next-line
-import About from "./components/About"
-// eslint-disable-next-line
-import DarkBtn from "./buttons/BtnDark"
-import ScrollTopBtn from "./buttons/ScrollTopBtn"
-// eslint-disable-next-line
-import Projects from "./components/Projects"
-import Header from "./components/Header"
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Projects from './components/Projects'
+import Welcome from './components/Welcome'
+import About from './components/About'
 
+const ContentWrapper = styled.div`
+  margin-left: 20px;
+  margin-right: 20px;
+  @media (max-width:769px) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+`
 
-// app with routing for Single-Page Application (SPA)
 export default function App() {
 
   return (
     <Suspense fallback="loading">
-    <div id="appBody">
 
-      <Router basename="/cvreact">
-      
-      <div id="sidebar">
-        <Header />
+      <div className="App">
+
+        <Router basename="cvreact">
+        <GlobalStyles />
+          <Navbar />
+
+          <ContentWrapper>
+  
+            <Switch>
+              <Route path="/" exact>
+                <Welcome />
+              </Route>
+            </Switch>
+  
+            <Switch path="/projects">
+              <Route exact path="/projects" component={Projects} />
+            </Switch>
+  
+            <Switch path="/about">
+              <Route exact path="/about" component={About} />
+            </Switch>
+          </ContentWrapper>
+
+            <Footer />
+
+        </Router>
+
       </div>
 
-      <div id="main">
-      
-        <div id="title">
-            <h1>Andrès CV</h1> <hr />
-        </div>
-
-        <div id="darkbtn">
-          <DarkBtn />
-        </div>
-
-        <div id="portrait">        
-          <Switch>
-            <Route path="/" exact component={Portrait} />
-          </Switch>
-        </div>
-
-        <div id="projects">
-          <Switch>
-            <Route path="/projects" component={Projects} />
-          </Switch>
-        </div>
-
-        <div id="about">
-          <Switch>
-            <Route path="/about" component={About} />
-          </Switch>
-        </div>
-
-        <div id="scrollBtn">
-          <ScrollTopBtn />
-        </div>
-
-        <hr />
-
-        <div id="links">
-          <Links />
-        </div>
-        
-      </div>
-
-      </Router>
-
-    </div>
     </Suspense>
   );
 }
