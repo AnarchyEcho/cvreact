@@ -26,6 +26,13 @@ const ContentWrapper = styled.div`
 
 export default function App() {
 
+  window.addEventListener ("load", LocalMain, false);
+
+  function LocalMain () {
+      if(window.location.href.indexOf('cvreact/') === -1) return;
+      window.location.replace("/m/cvreact");
+  }
+
   return (
     <Suspense fallback="loading">
 
@@ -50,6 +57,19 @@ export default function App() {
             <Switch path="/about">
               <Route exact path="/about" component={About} />
             </Switch>
+
+            <Switch path="/m/cvreact">
+              <Route exact path="/m/cvreact" component={Welcome} />
+            </Switch>
+
+            <Switch path="/m/projects">
+              <Route exact path="/m/projects" component={Projects} />
+            </Switch>
+  
+            <Switch path="/m/about">
+              <Route exact path="/m/about" component={About} />
+            </Switch>
+
           </ContentWrapper>
 
             <Footer />
