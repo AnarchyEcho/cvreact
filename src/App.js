@@ -3,7 +3,7 @@ import React, { setState, useEffect, Suspense } from "react"
 // eslint-disable-next-line
 import ReactDOM from "react-dom"
 // eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect, useHistory} from 'react-router-dom';
 // eslint-disable-next-line
 import GlobalStyles from './GlobalStyles.js'
 // eslint-disable-next-line
@@ -26,11 +26,15 @@ const ContentWrapper = styled.div`
 
 export default function App() {
 
-  window.addEventListener ("load", LocalMain, false);
+  const mq = (window.matchMedia('(max-width: 769px)'))
 
-  function LocalMain () {
-      if(window.location.href.indexOf('cvreact/') === -1) return;
-      window.location.replace("/m/cvreact");
+  function RedirectMobile() {
+    let history = useHistory();
+    history.replace('/m/')
+  }
+
+  if (mq.matches && window.location.pathname !== '/m/')  {
+    RedirectMobile()
   }
 
   return (
@@ -38,7 +42,6 @@ export default function App() {
 
       <div className="App">
 
-        <Router basename="cvreact">
         <GlobalStyles />
           <Navbar />
 
@@ -58,8 +61,10 @@ export default function App() {
               <Route exact path="/about" component={About} />
             </Switch>
 
-            <Switch path="/m/cvreact">
-              <Route exact path="/m/cvreact" component={Welcome} />
+            <Switch>
+              <Route path="/m/" exact>
+                <Welcome />
+              </Route>
             </Switch>
 
             <Switch path="/m/projects">
@@ -73,8 +78,6 @@ export default function App() {
           </ContentWrapper>
 
             <Footer />
-
-        </Router>
 
       </div>
 

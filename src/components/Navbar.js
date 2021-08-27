@@ -183,7 +183,7 @@ const phone =
 <ThemeProvider theme={theme}>
     <NavWrapper>
           <NavWrapperLeft>
-              <NavTitle to="/">
+              <NavTitle to="/m/">
                 Andrès CV
               </NavTitle>
           </NavWrapperLeft>
