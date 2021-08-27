@@ -70,7 +70,7 @@ export default function Hamburger() {
 
             <HamLinkWrapper>
                 <HamLinkTitle>
-                    <HamLink to="/" onClick={stateChange}>Home</HamLink>
+                    <HamLink to="/m/" onClick={stateChange}>Home</HamLink>
                 </HamLinkTitle>
                 <HamLinkTitle>
                     <HamLink to="projects" onClick={stateChange}>Projects</HamLink>
