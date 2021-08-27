@@ -30,7 +30,7 @@ export default function App() {
 
   function RedirectMobile() {
     let history = useHistory();
-    history.push('/m/')
+    history.replace('/m/')
   }
 
   if (mq.matches && window.location.pathname !== '/m/')  {
