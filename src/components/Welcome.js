@@ -23,7 +23,7 @@ const CodeWrapper = styled.div`
     to   { right: 0; }
 }
 @media (max-width:769px) {
-    width: 365px;
+    width: 95%;
     margin-right: 0;
     margin-left: 8px;
     position: relative;
