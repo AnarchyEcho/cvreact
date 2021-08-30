@@ -1,30 +1,14 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import App from "./App.js"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 // eslint-disable-next-line
-import Style from "./style.css"
-// eslint-disable-next-line
-import {I18nextProvider} from "react-i18next";
-import i18next from "i18next";
-import common_no from "./translations/no/common.json";
-import common_en from "./translations/en/common.json";
-
-    i18next.init({
-        interpolation: { escapeValue: false },  // React already does escaping
-        lng: 'no',                              // language to use
-        resources: {
-            en: {
-                common: common_en               // 'common' is our custom namespace
-            },
-            no: {
-                common: common_no
-            },
-        },
-    });
+import { BrowserRouter as Router, Switch, Route, Link, Redirect, useHistory} from 'react-router-dom';
 
 ReactDOM.render(
-<I18nextProvider i18n={i18next}>
+  <React.StrictMode>
+  <Router basename="cvreact">
     <App />
-</I18nextProvider>,
-document.getElementById("root")
-)
+  </Router>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
