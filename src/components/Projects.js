@@ -105,7 +105,6 @@ export default function Projects() {
               ))}
             </UnoList>
           </ListWrapper>
-          
       </div>
     );
   }
