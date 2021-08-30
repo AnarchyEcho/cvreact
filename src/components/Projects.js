@@ -4,12 +4,24 @@ import React, { useState, useEffect } from 'react';
 import styled, { ThemeProvider} from 'styled-components';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
+// eslint-disable-next-line
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// eslint-disable-next-line
+import { faGithub as Git } from "@fortawesome/free-brands-svg-icons";
 
 const List = styled.li`
     list-style: none;
     margin-left: -40px;
-    padding: 0;
+    margin-bottom: 10px;
+    padding: 0 0 0 5px;
     white-space: break-spaces;
+    width: 550px;
+    background-color: #303030;
+    border-radius: 10px;
+    @media (max-width: 768px) {
+    width: 350px;
+    margin-left: -30px;
+    }
 `
 const ListWrapper = styled.div`
 
@@ -31,6 +43,14 @@ const ListSpan = styled.span`
 `
 const ListLink = styled.a`
   word-break: break-word;
+  color: #0094e3;
+`
+const ListIcon = styled(FontAwesomeIcon)`
+    color: #fafafa;
+    margin-left: 5px;
+    &:hover {
+        filter: invert(50%) sepia(48%) saturate(1537%) hue-rotate(2deg) brightness(108%) contrast(107%);
+    }
 `
 
 export default function Projects() {
@@ -48,6 +68,7 @@ export default function Projects() {
           (result) => {
             setIsLoaded(true);
             setItems(result);
+            console.log(result);
           },
           // Note: it's important to handle errors here
           // instead of a catch() block so that we don't swallow
@@ -73,7 +94,12 @@ export default function Projects() {
                 <List key={item.id} style={{lineHeight: "20px"}}>
                   <ListSubTitle>{item.name}</ListSubTitle>
                   <p>Description: {item.description}</p>
-                  <p><ListSpan>Link</ListSpan><br/><ListLink href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>{item.html_url}</ListLink></p> <br/>
+                  {item.has_pages ? <ListLink href={"https://kodeandre.github.io/" + item.name} target="_blank" rel="noreferrer">Live page</ListLink> : null}
+                  <p>
+                    <ListSpan>Code: </ListSpan>
+                    <ListLink href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>
+                    <ListIcon icon={Git} size="2x" /></ListLink>
+                  </p> <br/>
                 </List>
               ))}
             </UnoList>
