@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars as HB, faTimes as Cross } from '@fortawesome/free-solid-svg-icons'
 // eslint-disable-next-line
@@ -47,7 +47,7 @@ const HamThemeToggled = {
 export default function Hamburger() {
 
     const [toggled, setToggled] = React.useState(false);
-    const [theme, setTheme] = useState(HamTheme);
+    const [theme, setTheme] = React.useState(HamTheme);
     const [Icon, setIcon] = React.useState(HB);
 
     function stateChange() {
