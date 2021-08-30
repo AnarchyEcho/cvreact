@@ -37,18 +37,21 @@ const UnoList = styled.ul`
 `
 const ListSubTitle = styled.h3`
   color: #fe9000;
+  text-transform: capitalize;
 `
 const ListSpan = styled.span`
   color: #fe9000;
-  vertical-align: 30%;
+  vertical-align: 5%;
 `
 const ListLink = styled.a`
   word-break: break-word;
   color: #0094e3;
+  font-weight: bold;
 `
 const ListIcon = styled(FontAwesomeIcon)`
     color: #fafafa;
     margin-left: 5px;
+    transform: scale(1.7);
     &:hover {
         filter: invert(50%) sepia(48%) saturate(1537%) hue-rotate(2deg) brightness(108%) contrast(107%);
     }
@@ -95,11 +98,11 @@ export default function Projects() {
                 <List key={item.id} style={{lineHeight: "20px"}}>
                   <ListSubTitle>{item.name}</ListSubTitle>
                   <p>Description: {item.description}</p>
-                  {item.has_pages ? <ListLink href={"https://kodeandre.github.io/" + item.name} target="_blank" rel="noreferrer">Live page</ListLink> : null}
+                  {item.has_pages ? <ListLink href={"https://kodeandre.github.io/" + item.name} target="_blank" rel="noreferrer">Click here for live page of this project</ListLink> : null}
                   <p>
                     <ListSpan>Source: </ListSpan>
                     <ListLink href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>
-                    <ListIcon icon={Git} size="2x" /></ListLink>
+                    <ListIcon icon={Git} /></ListLink>
                   </p> <br/>
                 </List>
               ))}
