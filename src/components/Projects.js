@@ -40,6 +40,7 @@ const ListSubTitle = styled.h3`
 `
 const ListSpan = styled.span`
   color: #fe9000;
+  vertical-align: 30%;
 `
 const ListLink = styled.a`
   word-break: break-word;
@@ -96,7 +97,7 @@ export default function Projects() {
                   <p>Description: {item.description}</p>
                   {item.has_pages ? <ListLink href={"https://kodeandre.github.io/" + item.name} target="_blank" rel="noreferrer">Live page</ListLink> : null}
                   <p>
-                    <ListSpan>Code: </ListSpan>
+                    <ListSpan>Source: </ListSpan>
                     <ListLink href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>
                     <ListIcon icon={Git} size="2x" /></ListLink>
                   </p> <br/>

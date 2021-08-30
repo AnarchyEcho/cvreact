@@ -25,4 +25,22 @@ export default createGlobalStyle`
         padding: 0 0 2.5rem 0;
         font-size: 16px;
     }
+
+    /* Scrollbar css */
+
+    ::-webkit-scrollbar {
+    width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+    background-color: #12121200;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: #fe9000;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+    background: #fe9000;
+    }
 `
