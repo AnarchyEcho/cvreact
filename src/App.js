@@ -33,7 +33,9 @@ export default function App() {
     history.replace('/m/')
   }
 
-  if (mq.matches && window.location.pathname !== '/m/')  {
+  const url = window.location.href;
+
+  if (mq.matches && !url.includes('/m/')) {
     RedirectMobile()
   }
 
