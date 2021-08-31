@@ -11,6 +11,7 @@ export default createGlobalStyle`
         font-size: 16px;
         @media (max-width:769px) {
             font-size: 12px;
+            overscroll-behavior-y: none;
         }
     }
 
