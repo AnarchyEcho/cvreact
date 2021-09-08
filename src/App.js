@@ -40,9 +40,7 @@ export default function App() {
   }
 
   return (
-    <Suspense fallback="loading">
-
-      <div className="App">
+      <div>
 
         <GlobalStyles />
           <Navbar />
@@ -82,7 +80,5 @@ export default function App() {
             <Footer />
 
       </div>
-
-    </Suspense>
   );
 }
