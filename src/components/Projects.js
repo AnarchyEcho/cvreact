@@ -97,7 +97,7 @@ export default function Projects() {
                 <List key={item.id} style={{lineHeight: "20px"}}>
                   <ListSubTitle>{item.name}</ListSubTitle>
                   <p>Description: {item.description}</p>
-                  {item.has_pages ? <ListLink href={"https://kodeandre.github.io/" + item.name} target="_blank" rel="noreferrer">Click here for live page of this project</ListLink> : null}
+                  {item.homepage ? <ListLink href={item.homepage} target="_blank" rel="noreferrer">Click here for live page of this project</ListLink> : null}
                   <p>
                     <ListSpan>Source: </ListSpan>
                     <ListLink href={item.html_url} target="_blank" rel="noreferrer" style={{color: "white"}}>
