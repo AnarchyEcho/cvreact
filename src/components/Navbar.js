@@ -3,7 +3,7 @@ import styled, { ThemeProvider} from 'styled-components';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, NavLink, Redirect} from 'react-router-dom';
 
 import Hamburger from './Hamburger'
 
@@ -89,7 +89,7 @@ let NavTitle = styled(Link)`
   }
 }
 `
-let NavLink = styled(Link)`
+let NavLinks = styled(NavLink)`
   font-size: ${props => props.theme.link.fontSize};
   text-decoration: none;
   color: #fafafa;
@@ -163,17 +163,17 @@ export default function Navbar() {
               </NavWrapperLeft>
             <NavWrapperRight>
 
-              <NavLink to="/">
+              <NavLinks exact to="/" activeStyle={{color: "#fe9000"}}>
                   Home
-              </NavLink>
+              </NavLinks>
 
-              <NavLink to="/projects">
+              <NavLinks to="/projects" activeStyle={{color: "#fe9000"}}>
                   Projects
-              </NavLink>
+              </NavLinks>
 
-              <NavLink to="/about">
+              <NavLinks to="/about" activeStyle={{color: "#fe9000"}}>
                   About
-              </NavLink>
+              </NavLinks>
 
           </NavWrapperRight>
         </NavWrapper>
