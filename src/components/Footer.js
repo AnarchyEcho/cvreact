@@ -71,7 +71,7 @@ export default function Footer() {
                 </FooterRights>
                 <FooterSocials>
                         <FooterLink href="https://github.com/KodeAndre" target="_blank" rel="noreferrer"><FooterIcon icon={Git} size="2x" /></FooterLink>
-                        <FooterLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer"><FooterIcon icon={Li} size="2x" /></FooterLink>
+                        {/* <FooterLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer"><FooterIcon icon={Li} size="2x" /></FooterLink> */}
                 </FooterSocials>
             </FooterWrapper>
         </FooterContainer>
