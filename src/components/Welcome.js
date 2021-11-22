@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom'
 // eslint-disable-next-line
 import { CodeBlock } from "react-code-blocks";
 import Codeblock from './CodeblockList'
-import codetheme from "./CodeTheme"
+import codetheme from "./CodeTheme.ts"
 
 import LiveCode from './LiveCode'
 

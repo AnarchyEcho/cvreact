@@ -5,7 +5,7 @@ import ReactDOM from "react-dom"
 // eslint-disable-next-line
 import { BrowserRouter as Router, Switch, Route, Link, Redirect, useHistory} from 'react-router-dom';
 // eslint-disable-next-line
-import GlobalStyles from './GlobalStyles.js'
+import GlobalStyles from './GlobalStyles.ts'
 // eslint-disable-next-line
 import styled from 'styled-components';
 
