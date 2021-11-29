@@ -163,15 +163,15 @@ export default function Navbar() {
               </NavWrapperLeft>
             <NavWrapperRight>
 
-              <NavLinks exact to="/" activeStyle={{color: "#fe9000"}}>
+              <NavLinks exact to="/" activeStyle={{color: "#fe9000", backgroundColor: "#202020"}}>
                   Home
               </NavLinks>
 
-              <NavLinks to="/projects" activeStyle={{color: "#fe9000"}}>
+              <NavLinks to="/projects" activeStyle={{color: "#fe9000", backgroundColor: "#202020"}}>
                   Projects
               </NavLinks>
 
-              <NavLinks to="/about" activeStyle={{color: "#fe9000"}}>
+              <NavLinks to="/about" activeStyle={{color: "#fe9000", backgroundColor: "#202020"}}>
                   About
               </NavLinks>
 
