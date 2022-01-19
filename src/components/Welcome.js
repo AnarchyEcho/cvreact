@@ -47,7 +47,7 @@ const CodeSelect = styled.select`
 export default function Welcome() {
     const [language, changeLanguage] = useState("jsx");
     const [lineNumbers, toggleLineNumbers] = useState(false);
-    const [lang, setLang] = useState(Codeblock['jsx']);
+    const [lang, setLang] = useState(Codeblock['tsx']);
 
     function handleChange(e) {
         setLang(Codeblock[e.target.value]);
