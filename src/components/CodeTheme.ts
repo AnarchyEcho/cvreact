@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 export default {
     lineNumberColor: `#ddd`,
     lineNumberBgColor: `#272822`,

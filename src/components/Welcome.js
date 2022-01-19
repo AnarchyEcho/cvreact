@@ -1,10 +1,5 @@
-// eslint-disable-next-line
-import React, { useState, useEffect } from 'react';
-// eslint-disable-next-line
-import styled, { ThemeProvider} from 'styled-components';
-// eslint-disable-next-line
-import ReactDOM from 'react-dom'
-// eslint-disable-next-line
+import { useState } from 'react';
+import styled from 'styled-components';
 import { CodeBlock } from "react-code-blocks";
 import Codeblock from './CodeblockList'
 import codetheme from "./CodeTheme.ts"
@@ -50,11 +45,8 @@ const CodeSelect = styled.select`
 `
 
 export default function Welcome() {
-    // eslint-disable-next-line
     const [language, changeLanguage] = useState("jsx");
-    // eslint-disable-next-line
     const [lineNumbers, toggleLineNumbers] = useState(false);
-    // eslint-disable-next-line
     const [lang, setLang] = useState(Codeblock['jsx']);
 
     function handleChange(e) {
@@ -75,11 +67,9 @@ export default function Welcome() {
                 wrapLines={true}
                 codeBlock
             />
-
-                
             <label htmlFor="codelang">Pick a language: </label>
             <CodeSelect id="codelang" onChange={handleChange}>
-                <option value='jsx'>jsx</option>
+                <option value='tsx'>tsx</option>
                 <option value='html'>html</option>
                 <option value='python'>python</option>
                 <option value='lua'>lua</option>

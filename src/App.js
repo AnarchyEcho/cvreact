@@ -1,12 +1,5 @@
-// eslint-disable-next-line
-import React from "react"
-// eslint-disable-next-line
-import ReactDOM from "react-dom"
-// eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route, Link, Redirect, useHistory} from 'react-router-dom';
-// eslint-disable-next-line
+import { BrowserRouter as Router, Switch, Route, useHistory } from 'react-router-dom';
 import GlobalStyles from './GlobalStyles.ts'
-// eslint-disable-next-line
 import styled from 'styled-components';
 
 import Navbar from './components/Navbar'
@@ -46,17 +39,17 @@ export default function App() {
           <Navbar />
 
           <ContentWrapper>
-  
+
             <Switch>
               <Route path="/" exact>
                 <Welcome />
               </Route>
             </Switch>
-  
+
             <Switch path="/projects">
               <Route exact path="/projects" component={Projects} />
             </Switch>
-  
+
             <Switch path="/about">
               <Route exact path="/about" component={About} />
             </Switch>
@@ -70,7 +63,7 @@ export default function App() {
             <Switch path="/m/projects">
               <Route exact path="/m/projects" component={Projects} />
             </Switch>
-  
+
             <Switch path="/m/about">
               <Route exact path="/m/about" component={About} />
             </Switch>

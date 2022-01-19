@@ -2,9 +2,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars as HB, faTimes as Cross } from '@fortawesome/free-solid-svg-icons'
 // eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
-// eslint-disable-next-line
-import styled, { ThemeProvider} from 'styled-components';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import styled, { ThemeProvider } from 'styled-components';
 
 const HamburgerWrapper = styled.div`
     justify-self: flex-end;

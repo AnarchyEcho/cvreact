@@ -1,12 +1,6 @@
-// eslint-disable-next-line
-import React, { useState, useEffect } from 'react';
-// eslint-disable-next-line
-import styled, { ThemeProvider} from 'styled-components';
-// eslint-disable-next-line
-import ReactDOM from 'react-dom'
-// eslint-disable-next-line
+import { useState, useEffect } from 'react';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// eslint-disable-next-line
 import { faGithub as Git } from "@fortawesome/free-brands-svg-icons";
 
 const List = styled.li`
@@ -61,7 +55,6 @@ export default function Projects() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
-  
     // Note: the empty deps array [] means
     // this useEffect will run once
     // similar to componentDidMount()

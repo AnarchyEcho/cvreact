@@ -1,9 +1,4 @@
-// eslint-disable-next-line
-import React, { useState, useEffect } from 'react';
-// eslint-disable-next-line
-import styled, { ThemeProvider} from 'styled-components';
-// eslint-disable-next-line
-import ReactDOM from 'react-dom'
+import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 
 
@@ -37,11 +32,11 @@ const LiveWrapper = styled.div`
 
 export default function LiveCode() {
 
-    let codeExample = 
+    let codeExample =
     `function LiveCode() {
         function btnFunction() {
             alert("You clicked a button");
-        } 
+        }
         return(
             <div>
             <h1>This is a live React editor</h1>
@@ -52,7 +47,7 @@ export default function LiveCode() {
             </div>
         )
     }`
-    
+
     return(
         <LiveWrapper>
             <LiveProvider code={codeExample}>

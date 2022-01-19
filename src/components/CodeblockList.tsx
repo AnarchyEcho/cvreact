@@ -1,6 +1,5 @@
-// eslint-disable-next-line
 export default {
-    jsx: `import React from 'react';
+    tsx: `import React from 'react';
     import styled from 'styled-components';
     import Norway from './Country'
     export default function WhoAmI() {

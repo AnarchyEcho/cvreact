@@ -1,9 +1,7 @@
-import React, {useEffect, useState} from 'react';
-import styled, { ThemeProvider} from 'styled-components';
+import { useEffect, useState } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
 // eslint-disable-next-line
-import ReactDOM from 'react-dom'
-// eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route, Link, NavLink, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
 
 import Hamburger from './Hamburger'
 
@@ -34,15 +32,15 @@ z-index: 1;
 `
 let NavWrapperLeft = styled.div`
 grid-area: NavWrapperLeft;
-display: grid; 
-grid-auto-flow: column; 
-grid-auto-columns: 1fr; 
-grid-auto-rows: 1fr; 
-grid-template-columns: 1fr; 
-grid-template-rows: 1fr; 
-gap: 0px 0px; 
-grid-template-areas: 
-  "."; 
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 1fr;
+grid-auto-rows: 1fr;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+gap: 0px 0px;
+grid-template-areas:
+  ".";
 height: ${props => props.theme.nav.height};
 align-items: ${props => props.theme.nav.alignItems};
 margin-left: 15px;
@@ -50,15 +48,15 @@ margin-left: 15px;
 let NavWrapperRight = styled.div`
 @media (min-width:768px) {
 grid-area: NavWrapperRight;
-display: grid; 
-grid-auto-flow: column; 
-grid-auto-columns: 1fr; 
-grid-auto-rows: 1fr; 
-grid-template-columns: 1fr 1fr 1fr; 
-grid-template-rows: 1fr; 
-gap: 0px 0px; 
-grid-template-areas: 
-  ". . ."; 
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 1fr;
+grid-auto-rows: 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+gap: 0px 0px;
+grid-template-areas:
+  ". . .";
 height: ${props => props.theme.nav.height};
 align-items: ${props => props.theme.nav.alignItems};
 justify-content: flex-end;
@@ -112,22 +110,22 @@ let wrapperTheme =
       height:'100px',
       alignItems: 'center',
       backgroundColor: "none",
-    }, 
+    },
     title: {
       fontSize: '32px',
-    }, 
+    },
     link: {
       fontSize: '22px',
       padding: "30px 0",
     }
   }
-let wrapperThemeScrolled = 
+let wrapperThemeScrolled =
   {
     nav: {
       height:'60px',
       alignItems: 'center',
       backgroundColor: "#fe9000",
-    }, 
+    },
     title: {
       fontSize: '24px',
       backgroundColor: '#fafafa',
@@ -153,7 +151,7 @@ export default function Navbar() {
       });
     }, []);
 
-    const desktop = 
+    const desktop =
     <ThemeProvider theme={theme}>
         <NavWrapper>
               <NavWrapperLeft>
@@ -179,7 +177,7 @@ export default function Navbar() {
         </NavWrapper>
       </ThemeProvider>
 
-const phone = 
+const phone =
 <ThemeProvider theme={theme}>
     <NavWrapper>
           <NavWrapperLeft>

@@ -1,10 +1,4 @@
-// eslint-disable-next-line
-import React from 'react';
-// eslint-disable-next-line
-import styled, { ThemeProvider} from 'styled-components';
-// eslint-disable-next-line
-import ReactDOM from 'react-dom'
-// eslint-disable-next-line
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // eslint-disable-next-line
 import { faGithub as Git, faLinkedin as Li } from "@fortawesome/free-brands-svg-icons";
@@ -35,15 +29,15 @@ const FooterRights = styled.div`
 `
 const FooterSocials = styled.div`
     grid-area: FooterSocials;
-    display: grid; 
-    grid-auto-flow: column; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "Email Icons"; 
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Email Icons";
     place-self: flex-end;
     margin-right: 20px;
     align-self: center;
