@@ -46,7 +46,7 @@ const CodeSelect = styled.select`
 
 export default function Welcome() {
     const [language, changeLanguage] = useState("jsx");
-    const [lineNumbers, toggleLineNumbers] = useState(false);
+    const [lineNumbers, toggleLineNumbers] = useState(false); // eslint-disable-line
     const [lang, setLang] = useState(Codeblock['tsx']);
 
     function handleChange(e) {

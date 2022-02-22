@@ -60,7 +60,7 @@ export default function Footer() {
             <FooterWrapper>
                 <FooterRights>
                     <p>
-                        &copy; Copyright 2021 <FooterLink href="https://github.com/kodeandre" target="_blank" rel="noreferrer">Andrè Kodehode</FooterLink>
+                        &copy; {`Copyright 2021 - ${new Date().getFullYear()}`} <FooterLink href="https://github.com/kodeandre" target="_blank" rel="noreferrer">Andrè Kodehode</FooterLink>
                     </p>
                 </FooterRights>
                 <FooterSocials>

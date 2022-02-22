@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useHistory } from 'react-router-dom'; // eslint-disable-line
 import GlobalStyles from './GlobalStyles.ts'
 import styled from 'styled-components';
 
